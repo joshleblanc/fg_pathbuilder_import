@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="3.3" >
+	<properties>
+		<name>Feature: Pathbuilder Import</name>
+		<version>0.1</version>
+		<loadorder>50</loadorder>
+		<description>
+			<text>Import Characters from Pathbuilder</text>
+			<website></website>
+			<author>fastchoker</author>
+		</description>
+		<ruleset>
+			<name>PFRPG2</name>
+		</ruleset>
+	</properties>
+
+	<announcement text="Pathbuilder Importer" font="emotefont" />
+
+	<base>
+	
+        <!-- Windows -->
+        <includefile source="common/template_pathbuilder_import.xml" />
+		<includefile source="windows/import_pathbuilder.xml" />
+                
+        
+        <includefile source="strings/strings.xml" />
+
+        <!-- Scripts -->    
+        <script name="ImportFromPathbuilder" file="scripts/import_from_pathbuilder.lua" />
+	</base>
+</root>

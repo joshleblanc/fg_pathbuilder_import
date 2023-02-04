@@ -1,0 +1,7 @@
+<root>
+	<!-- Import -->
+	<string name="import_pc_title">Import - PC From Pathbuilder</string>
+	
+	<string name="ft_empty_import_pc">Paste the Pathbuilder JSON here</string>
+	
+</root>
