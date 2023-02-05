@@ -12,4 +12,8 @@ function doPBImport()
     local nodeId = DB.getChild(nodeTarget, "name");
     -- Test setting the name
     DB.setValue(nodeTarget, "name", "string", "TESTER");
+    local featName = "Unconventional Weaponry";
+    featName = string.lower(featName);
+    local featMatchNode = ManagerGetRefData.getFeat(featName);
+    CharManager.addFeat(nodeTarget, "referencefeat", featMatchNode.getNodeName());
 end
