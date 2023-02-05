@@ -40,24 +40,15 @@
 				<anchored to="statblock" />
 				<target>statblock</target>
 			</scrollbar>		
-			
-					
 
-			<label name="mode_label">
-				<anchored to="contentframe" position="insidebottomleft" offset="10,0" />
-				<frame>
-					<name>fieldlight</name>
-					<offset>17,5,17,5</offset>
-				</frame>
-				<static textres="import_label_mode" />
-			</label>
-			<comboboxc name="mode">
-				<anchored to="contentframe" position="insidebottom" height="20">
-					<left parent="mode_label" anchor="right" offset="20" />
-				</anchored>
-			</comboboxc>
 
-				
+				<button_import_window name="button_import">
+				<script>
+					function onButtonPress()
+						ImportFromPathbuilder.doPBImport();
+					end
+				</script>
+			</button_import_window>		
 
 			<resize_utilitybox />
 			<close_utilitybox />
