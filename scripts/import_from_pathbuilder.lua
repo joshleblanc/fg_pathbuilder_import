@@ -16,8 +16,8 @@ function doPBImport(pcJson)
     -- Test setting the name
     local name = jsonTable["build"]["name"];
     local ancestry = jsonTable["build"]["ancestry"];
-    local ancestryNode = ManagerGetRefData.getLookupDataRecordGlobally("reference.ancestries.poppet@Pathfinder 2 RPG - Lost Omens The Grand Bazaar", "referencerace");
-
+    local ancestryNode = DB.findNode("poppet.racelink");
+ 
     DB.setValue(nodeTarget, "name", "string", name);
     
 
