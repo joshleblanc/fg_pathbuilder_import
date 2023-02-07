@@ -45,7 +45,7 @@
 				<button_import_window name="button_import">
 				<script>
 					function onButtonPress()
-						ImportFromPathbuilder.doPBImport(window.statblock.getValue());
+						ImportFromPathbuilder.doPBImport(window.statblock.getValue(), window);
 					end
 				</script>
 			</button_import_window>		
