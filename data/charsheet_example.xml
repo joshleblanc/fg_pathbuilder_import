@@ -73,6 +73,7 @@
 					<general type="number">15</general>
 				</totals>
 			</ac>
+      <alignment type="string">Neutral</alignment>
 			<attackbonus>
 				<base type="number">0</base>
 				<grapple>

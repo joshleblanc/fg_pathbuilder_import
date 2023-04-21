@@ -14,7 +14,8 @@ function onInit()
       name = Name.import,
       ancestry = Ancestry.import,
       background = Background.import,
-      class = Class.import
+      class = Class.import,
+      alignment = Alignment.import
     }
 end
 

@@ -33,5 +33,6 @@
     <script name="Background" file="scripts/importers/background.lua" /> 
     <script name="Class" file="scripts/importers/class.lua" /> 
     <script name="Name" file="scripts/importers/name.lua" /> 
+    <script name="Alignment" file="scripts/importers/alignment.lua" />
   </base>
 </root>
