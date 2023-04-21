@@ -29,8 +29,6 @@
     <!-- Scripts -->
     <script name="ImportFromPathbuilder" file="scripts/import_from_pathbuilder.lua" />
     <script name="JSONUtil" file="utility/json_util.lua" />
-    <script name="Importer" file="scripts/importer.lua" />
-    <script name="Character" file="scripts/importers/character.lua" />
     <script name="Ancestry" file="scripts/importers/ancestry.lua" />
     <script name="Background" file="scripts/importers/background.lua" /> 
     <script name="Class" file="scripts/importers/class.lua" /> 
