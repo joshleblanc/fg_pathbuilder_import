@@ -1,0 +1,1508 @@
+<charsheet>
+		<id-00001>
+			<abilities>
+				<charisma>
+					<bonus type="number">1</bonus>
+					<bonusmodifier type="number">0</bonusmodifier>
+					<chargen type="number">12</chargen>
+					<damage type="number">0</damage>
+					<miscmod type="number">0</miscmod>
+					<score type="number">12</score>
+					<tempmod type="number">0</tempmod>
+				</charisma>
+				<constitution>
+					<bonus type="number">1</bonus>
+					<bonusmodifier type="number">0</bonusmodifier>
+					<chargen type="number">12</chargen>
+					<damage type="number">0</damage>
+					<miscmod type="number">0</miscmod>
+					<score type="number">12</score>
+					<tempmod type="number">0</tempmod>
+				</constitution>
+				<dexterity>
+					<bonus type="number">2</bonus>
+					<bonusmodifier type="number">0</bonusmodifier>
+					<chargen type="number">14</chargen>
+					<damage type="number">0</damage>
+					<miscmod type="number">0</miscmod>
+					<score type="number">14</score>
+					<tempmod type="number">0</tempmod>
+				</dexterity>
+				<intelligence>
+					<bonus type="number">2</bonus>
+					<bonusmodifier type="number">0</bonusmodifier>
+					<chargen type="number">14</chargen>
+					<damage type="number">0</damage>
+					<miscmod type="number">0</miscmod>
+					<score type="number">14</score>
+					<tempmod type="number">0</tempmod>
+				</intelligence>
+				<strength>
+					<bonus type="number">4</bonus>
+					<bonusmodifier type="number">0</bonusmodifier>
+					<chargen type="number">18</chargen>
+					<damage type="number">0</damage>
+					<miscmod type="number">0</miscmod>
+					<score type="number">18</score>
+					<tempmod type="number">0</tempmod>
+				</strength>
+				<wisdom>
+					<bonus type="number">-1</bonus>
+					<bonusmodifier type="number">0</bonusmodifier>
+					<chargen type="number">8</chargen>
+					<damage type="number">0</damage>
+					<miscmod type="number">0</miscmod>
+					<score type="number">8</score>
+					<tempmod type="number">0</tempmod>
+				</wisdom>
+			</abilities>
+			<ac>
+				<sources>
+					<acitem type="number">0</acitem>
+					<acmisc type="number">0</acmisc>
+					<acshieldactive type="number">0</acshieldactive>
+					<armor type="number">3</armor>
+					<prof type="number">0</prof>
+					<proflevel type="string">trained</proflevel>
+					<shield type="number">0</shield>
+					<shieldraised type="number">0</shieldraised>
+					<size type="number">0</size>
+					<temporary type="number">0</temporary>
+				</sources>
+				<totals>
+					<general type="number">15</general>
+				</totals>
+			</ac>
+			<attackbonus>
+				<base type="number">0</base>
+				<grapple>
+					<size type="number">0</size>
+				</grapple>
+				<melee>
+					<misc type="number">0</misc>
+					<size type="number">0</size>
+					<temporary type="number">0</temporary>
+					<total type="number">4</total>
+				</melee>
+				<ranged>
+					<misc type="number">0</misc>
+					<size type="number">0</size>
+					<temporary type="number">0</temporary>
+					<total type="number">2</total>
+				</ranged>
+			</attackbonus>
+			<background type="string">Acolyte</background>
+			<backgroundlink type="windowreference">
+				<class>reference_background</class>
+				<recordname>reference.backgrounds.acolyte@Pathfinder Second Edition Core Rules</recordname>
+			</backgroundlink>
+			<chargentracker>
+				<abilities>
+					<ancestry_boost_1 type="string">dexterity</ancestry_boost_1>
+					<ancestry_boost_2 type="string">charisma</ancestry_boost_2>
+					<ancestry_boost_3 type="string">strength</ancestry_boost_3>
+					<ancestry_boost_4 type="string">0</ancestry_boost_4>
+					<ancestry_flaw type="string">wisdom</ancestry_flaw>
+					<background_boost_1 type="string">intelligence</background_boost_1>
+					<background_boost_2 type="string">strength</background_boost_2>
+					<class_keyability type="string">strength</class_keyability>
+					<free_boost_1 type="string">strength</free_boost_1>
+					<free_boost_2 type="string">dexterity</free_boost_2>
+					<free_boost_3 type="string">constitution</free_boost_3>
+					<free_boost_4 type="string">intelligence</free_boost_4>
+				</abilities>
+				<choices>
+					<ancestry_boost_1_choices type="string">dexterity</ancestry_boost_1_choices>
+					<ancestry_boost_2_choices type="string">charisma</ancestry_boost_2_choices>
+					<ancestry_boost_3_choices type="string">strength|constitution|intelligence|wisdom</ancestry_boost_3_choices>
+					<ancestry_flaw_choice type="string">wisdom</ancestry_flaw_choice>
+					<background_boost_1_choices type="string">intelligence|wisdom</background_boost_1_choices>
+					<background_boost_2_choices type="string">strength|dexterity|constitution|wisdom|charisma</background_boost_2_choices>
+					<class_keyability_choices type="string">strength</class_keyability_choices>
+					<four_free_boosts_choices type="string">strength|dexterity|constitution|intelligence|wisdom|charisma</four_free_boosts_choices>
+					<four_free_boosts_choices_made type="string">yes</four_free_boosts_choices_made>
+				</choices>
+				<log type="formattedtext">
+					<p>+ Feat 'Acute Vision' added to 'Test' - automation, if appropriate, has been applied.</p>
+					<p>___________________________________________________________</p>
+					<p>+ 'Bestial Rage - Ape (Animal Instinct)' added to 'Test' - automation (if appropriate) has been applied.</p>
+					<p>+ Class feature 'Bestial Rage - Ape (Animal Instinct)' added to 'Test'.</p>
+					<p>___________________________________________________________</p>
+					<p>
+						<b>+++ Some features of the class feature 'Animal Instinct' may require manual addition or editing...</b>
+					</p>
+					<p>
+						<b>+++ ...see the 'Instinct - Animal Instinct' entry in the 'Class Abilties' section of the 'Abilities' tab and also review the messages related to this class freature immediately below.</b>
+					</p>
+					<p>+ 'Bestial Rage (Animal Instinct Ability)' added to 'Test'. No automation applied. <b>+++ Check entry and manually apply if needed.</b></p>
+					<p>+ 'Anathema (Animal Instinct)' added to 'Test'. No automation applied. <b>+++ Check entry and manually apply if needed.</b></p>
+					<p>+ 'Animal Instinct' added to 'Test' - automation (if appropriate) has been applied.</p>
+					<p>+ Class feature 'Animal Instinct' added to 'Test'.</p>
+					<p>___________________________________________________________</p>
+					<p>+ Feature 'Choice - Barbarian Instinct.' added to 'Test' - automation, if appropriate, has been applied.</p>
+					<p>+ Feature 'Instinct' added to 'Test'. No automation applied. <b>+++ Check entry and manually apply if needed.</b></p>
+					<h>+++ Add 'barbarian feat 1'</h>
+					<p>+ Feature 'INSTINCTS' added to 'Test'. No automation applied. <b>+++ Check entry and manually apply if needed.</b></p>
+					<p>+ Feature 'Rage' added to 'Test' - automation, if appropriate, has been applied.</p>
+					<p>+ Class hit points ((Class + CON bonus) x level) for 'Test' = '12'.</p>
+					<h>+++ Train 'Test' in a total of 3 skills. Add one more trained skill if you increase your INT in step 4 - Free Boosts.</h>
+					<p>+ Added 150 SP to 'Test'.</p>
+					<p>+ Skill 'Athletics' trained for 'Test'.</p>
+					<p>+ Armor proficiency information added to 'Test'.</p>
+					<p>+ Weapon proficiency information added to 'Test'.</p>
+					<p>+ Set 'will' proficiency to 'expert' for 'Test'</p>
+					<p>+ Set 'reflex' proficiency to 'trained' for 'Test'</p>
+					<p>+ Set 'fortitude' proficiency to 'expert' for 'Test'</p>
+					<p>+ Set 'Perception' proficiency to 'expert' for 'Test'</p>
+					<p>+ Class key ability 'Strength' added to 'Test'.</p>
+					<p>
+						<b>+ One level of class 'Barbarian' added to 'Test'.</b>
+					</p>
+					<p>___________________________________________________________</p>
+					<p>+ Skill 'Religion' trained for 'Test'.</p>
+					<p>+ Trained Background Skill 'Lore - Scribing' added to 'Test'.</p>
+					<p>+ Added Background Feat 'Student of the Canon' to 'Test'.</p>
+					<p>+ Feat 'Student of the Canon' added to 'Test'. No automation applied. <b>+++ Check entry and manually apply if needed.</b></p>
+					<linklist>
+						<link class="referencefeat" recordname="reference.feats.studentofthecanongeneralskill@Pathfinder Second Edition Core Rules">Student of the Canon</link>
+					</linklist>
+					<p>+ Ability boosts for 'Acolyte' successfully added to 'Test'</p>
+					<p>
+						<b>+ Background 'Acolyte' added to 'Test'.</b>
+					</p>
+					<p>___________________________________________________________</p>
+					<p>+ 'Clawed Catfolk feature' added to 'Test' - automation (if appropriate) has been applied.</p>
+					<p>
+						<b>+ Ancestry heritage 'Clawed Catfolk' added to 'Test'. </b>___________________________________________________________</p>
+					<p>___________________________________________________________</p>
+					<h>+++ Add 1 Ancestry Feat.</h>
+					<p>+ Ancestry data 'Catfolk Heritages' added to 'Test'.</p>
+					<p>+ Ancestry data 'Ability Boosts' added to 'Test'.</p>
+					<p>+ Ancestry data 'SPEED 25 feet' added to 'Test'.</p>
+					<p>+ Ancestry hit points (8) added for 'Catfolk' Ancestry to 'Test'.</p>
+					<p>+ Ancestry data 'SIZE Medium' added to 'Test'.</p>
+					<p>+ Ancestry data 'Land on Your Feet' added to 'Test'.</p>
+					<p>+ Ancestry data 'Ancestry Feats' added to 'Test'.</p>
+					<p>+ Ancestry data 'Low-Light Vision' added to 'Test'.</p>
+					<p>+ Language 'Amurrun' added to 'Test'.</p>
+					<p>+ Language 'Common' added to 'Test'.</p>
+					<p>+ Ancestry data 'Ability Flaw' added to 'Test'.</p>
+					<p>+ Ancestry traits (Catfolk, Humanoid) added for 'Catfolk' Ancestry to 'Test'.</p>
+					<p>+ Ancestry data 'Bonus Languages' added to 'Test'.</p>
+					<p>
+						<b>+ Ancestry 'Catfolk' added to 'Test'</b>
+					</p>
+					<p>___________________________________________________________</p>
+					<p>To start, add an Ancestry. Click the '1) ANCESTRY' button above and then click the 'Add to PC' button next to your chosen Ancestry, or drag/drop the link for the Ancestry to the PC sheet or chargen tracker.</p>
+				</log>
+				<opened type="number">1</opened>
+			</chargentracker>
+			<classes>
+				<id-00001>
+					<level type="number">1</level>
+					<name type="string">Barbarian</name>
+					<shortcut type="windowreference">
+						<class>referenceclass</class>
+						<recordname>reference.classes.barbarian@Pathfinder Second Edition Core Rules</recordname>
+					</shortcut>
+				</id-00001>
+			</classes>
+			<coins>
+				<id-00001>
+					<amount type="number">0</amount>
+					<name type="string">PP</name>
+				</id-00001>
+				<id-00002>
+					<amount type="number">0</amount>
+					<name type="string">GP</name>
+				</id-00002>
+				<id-00003>
+					<amount type="number">150</amount>
+					<name type="string">SP</name>
+				</id-00003>
+				<id-00004>
+					<amount type="number">0</amount>
+					<name type="string">CP</name>
+				</id-00004>
+			</coins>
+			<defenses />
+			<effect_type_filter_client type="string">ct</effect_type_filter_client>
+			<effects>
+				<id-00001>
+					<calculated_effect type="string">DMG: 2 melee; AC: -1</calculated_effect>
+					<effect_type type="string">char</effect_type>
+					<effectsourcelink type="windowreference">
+						<class>referenceclassability</class>
+						<recordname>charsheet.id-00001.specialabilitylist.id-00001</recordname>
+					</effectsourcelink>
+					<isactive type="number">0</isactive>
+					<label type="string">DMG: 2 melee; AC: -1</label>
+					<name type="string">Rage</name>
+				</id-00001>
+			</effects>
+			<encumbrance>
+				<armorcheckpenalty type="number">0</armorcheckpenalty>
+				<armormaxstatbonus type="number">2</armormaxstatbonus>
+				<armormaxstatbonusactive type="number">1</armormaxstatbonusactive>
+				<load type="number">4.4</load>
+				<speedpenalty type="number">0</speedpenalty>
+			</encumbrance>
+			<featlist>
+				<id-00001>
+					<effectsbenefits type="formattedtext">
+						<p>You've researched many faiths enough to recognize notions about them that are unlikely to be true. If you roll a critical failure at a Religion check to Decipher Writing of a religious nature or to Recall Knowledge about the tenets of faiths, you get a failure instead. When attempting to Recall Knowledge about the tenets of your own faith, if you roll a failure, you get a success instead, and if you roll a success, you get a critical success instead.</p>
+					</effectsbenefits>
+					<filtercategory type="string">corerules</filtercategory>
+					<level type="number">1</level>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Student of the Canon</name>
+					<prerequisites type="string">trained in Religion</prerequisites>
+					<shortbenefits type="string">More accurately recognize the tenets of your faith or philosophy</shortbenefits>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<traits type="string">GENERAL, SKILL</traits>
+				</id-00001>
+				<id-00002>
+					<automation type="string">[SENSES Darkvision]</automation>
+					<automation_applied type="string">+</automation_applied>
+					<effectsbenefits type="formattedtext">
+						<p>When you are raging, your visual senses improve, granting you darkvision.</p>
+					</effectsbenefits>
+					<filtercategory type="string">corerulesbarbarian</filtercategory>
+					<level type="number">1</level>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Acute Vision</name>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<traits type="string">BARBARIAN</traits>
+				</id-00002>
+			</featlist>
+			<hero type="number">0</hero>
+			<hp>
+				<ancestry type="number">8</ancestry>
+				<ancestrytemp type="number">0</ancestrytemp>
+				<classperlevel type="number">12</classperlevel>
+				<classtotal type="number">13</classtotal>
+				<current type="number">21</current>
+				<dying type="number">0</dying>
+				<miscmod type="number">0</miscmod>
+				<tempmod type="number">0</tempmod>
+				<temporary type="number">0</temporary>
+				<total type="number">21</total>
+				<wounded type="number">0</wounded>
+				<wounds type="number">0</wounds>
+			</hp>
+			<initiative>
+				<misc type="number">0</misc>
+				<perception type="number">4</perception>
+				<perceptiontemp type="number">0</perceptiontemp>
+				<perceptiontotal type="number">4</perceptiontotal>
+				<stealth type="number">2</stealth>
+				<stealthtempmod type="number">0</stealthtempmod>
+				<stealthttoal type="number">2</stealthttoal>
+			</initiative>
+			<inventorylist>
+				<id-00001>
+					<bulk type="string">-</bulk>
+					<carried type="number">2</carried>
+					<count type="number">1</count>
+					<damage type="string">1d6</damage>
+					<damagetype type="string">slashing</damagetype>
+					<group type="string">Brawling</group>
+					<hands type="string">1</hands>
+					<isidentified type="number">1</isidentified>
+					<locked type="number">1</locked>
+					<name type="string">Claw</name>
+					<range type="number">0</range>
+					<subtype type="string">Unarmed attack</subtype>
+					<traits type="string">agile, finesse, unarmed</traits>
+					<type type="string">Weapon</type>
+					<weight type="number">0</weight>
+				</id-00001>
+				<id-00002>
+					<bulk type="string">-</bulk>
+					<carried type="number">2</carried>
+					<count type="number">1</count>
+					<damage type="string">1d10</damage>
+					<damagetype type="string">bludgeoning</damagetype>
+					<group type="string">Brawling</group>
+					<hands type="string">1</hands>
+					<isidentified type="number">1</isidentified>
+					<locked type="number">1</locked>
+					<name type="string">Fist</name>
+					<range type="number">0</range>
+					<subtype type="string">Unarmed attack</subtype>
+					<traits type="string">grapple, unarmed</traits>
+					<type type="string">Weapon</type>
+					<weight type="number">0</weight>
+				</id-00002>
+				<id-00004>
+					<ac type="number">3</ac>
+					<armorstrength type="number">14</armorstrength>
+					<bulk type="string">2</bulk>
+					<carried type="number">2</carried>
+					<checkpenalty type="number">-2</checkpenalty>
+					<cost type="string">20 sp</cost>
+					<count type="number">1</count>
+					<group type="string">Leather</group>
+					<isidentified type="number">1</isidentified>
+					<locked type="number">1</locked>
+					<maxstatbonus type="number">2</maxstatbonus>
+					<name type="string">Hide</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<speedpenalty type="number">-5</speedpenalty>
+					<subtype type="string">Medium</subtype>
+					<type type="string">Armor</type>
+					<weight type="number">2</weight>
+				</id-00004>
+				<id-00005>
+					<bulk type="string">L</bulk>
+					<carried type="number">2</carried>
+					<cost type="string">1 sp</cost>
+					<count type="number">4</count>
+					<damage type="string">1d6</damage>
+					<damagetype type="string">piercing</damagetype>
+					<description type="formattedtext">
+						<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>
+					</description>
+					<group type="string">Dart</group>
+					<hands type="string">1</hands>
+					<isidentified type="number">1</isidentified>
+					<locked type="number">1</locked>
+					<name type="string">Javelin</name>
+					<pfslegal type="string">False</pfslegal>
+					<range type="number">30</range>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Simple Ranged</subtype>
+					<traits type="string">Thrown</traits>
+					<type type="string">Weapon</type>
+					<weight type="number">0.1</weight>
+				</id-00005>
+				<id-00007>
+					<bulk type="string">-</bulk>
+					<cost type="string">1 sp</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>A backpack holds up to 4 Bulk of items. and the first 2 Bulk of these items don't count against your Bulk limits. If you're carrying or stowing the pack rather than wearing it on your back, its Bulk is light instead of negligible.</p>
+					</description>
+					<hands type="string">-</hands>
+					<isidentified type="number">1</isidentified>
+					<locked type="number">1</locked>
+					<name type="string">Backpack</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0</weight>
+				</id-00007>
+				<id-00008>
+					<bulk type="string">L</bulk>
+					<cost type="string">2 cp</cost>
+					<count type="number">1</count>
+					<hands type="string">-</hands>
+					<isidentified type="number">1</isidentified>
+					<location type="string">backpack</location>
+					<locked type="number">1</locked>
+					<name type="string">Bedroll</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0.1</weight>
+				</id-00008>
+				<id-00009>
+					<bulk type="string">-</bulk>
+					<cost type="string">1 cp</cost>
+					<count type="number">1</count>
+					<hands type="string">1</hands>
+					<isidentified type="number">1</isidentified>
+					<location type="string">backpack</location>
+					<locked type="number">1</locked>
+					<name type="string">Chalk (10)</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0</weight>
+				</id-00009>
+				<id-00010>
+					<bulk type="string">-</bulk>
+					<cost type="string">5 cp</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>Flint and steel are useful in creating a fire if you have the time to catch a spark, though using them is typically too time-consuming to be practical during an encounter. Even in ideal conditions, using flint and steel to light a flame requires using at least 3 actions, and often significantly longer.</p>
+					</description>
+					<hands type="string">2</hands>
+					<isidentified type="number">1</isidentified>
+					<location type="string">backpack</location>
+					<locked type="number">1</locked>
+					<name type="string">Flint and steel</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0</weight>
+				</id-00010>
+				<id-00011>
+					<bulk type="string">L</bulk>
+					<cost type="string">5 sp</cost>
+					<count type="number">1</count>
+					<hands type="string">2</hands>
+					<isidentified type="number">1</isidentified>
+					<location type="string">backpack</location>
+					<locked type="number">1</locked>
+					<name type="string">Rope (50 feet)</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0.1</weight>
+				</id-00011>
+				<id-00012>
+					<bulk type="string">L</bulk>
+					<cost type="string">4 sp</cost>
+					<count type="number">2</count>
+					<hands type="string">1</hands>
+					<isidentified type="number">1</isidentified>
+					<location type="string">backpack</location>
+					<locked type="number">1</locked>
+					<name type="string">Rations (1 week)</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0.1</weight>
+				</id-00012>
+				<id-00013>
+					<bulk type="string">-</bulk>
+					<cost type="string">2 cp</cost>
+					<count type="number">1</count>
+					<hands type="string">1</hands>
+					<isidentified type="number">1</isidentified>
+					<location type="string">backpack</location>
+					<locked type="number">1</locked>
+					<name type="string">Soap</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0</weight>
+				</id-00013>
+				<id-00014>
+					<automation type="string">[EFFECT equip LIGHT: 25 torch]</automation>
+					<bulk type="string">L</bulk>
+					<cost type="string">1 cp</cost>
+					<count type="number">5</count>
+					<description type="formattedtext">
+						<p>A torch sheds bright light in a 20-foot radius (and dim light to the next 20 feet) for 1 hour. It can be used as an improvised weapon that deals 1d4 bludgeoning damage plus 1 fire damage.</p>
+					</description>
+					<hands type="string">1</hands>
+					<isidentified type="number">1</isidentified>
+					<location type="string">backpack</location>
+					<locked type="number">1</locked>
+					<name type="string">Torch</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0.1</weight>
+				</id-00014>
+				<id-00015>
+					<bulk type="string">L</bulk>
+					<cost type="string">5 cp</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>When it's full, a waterskin contains roughly 1 day's worth of water for a Small or Medium creature.</p>
+					</description>
+					<hands type="string">1</hands>
+					<isidentified type="number">1</isidentified>
+					<location type="string">backpack</location>
+					<locked type="number">1</locked>
+					<name type="string">Waterskin</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0.1</weight>
+				</id-00015>
+				<id-00016>
+					<bulk type="string">L</bulk>
+					<cost type="string">1 sp</cost>
+					<count type="number">1</count>
+					<description type="formattedtext">
+						<p>You can throw a grappling hook with a rope tied to it to make a climb easier. To anchor a grappling hook, make an attack roll with the secret trait against a DC depending on the target, typically at least DC 20. On a success, your hook has a firm hold, but on a critical failure, the hook seems like it will hold but actually falls when you're partway up.</p>
+					</description>
+					<hands type="string">1</hands>
+					<isidentified type="number">1</isidentified>
+					<locked type="number">1</locked>
+					<name type="string">Grappling hook</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Adventuring Gear</subtype>
+					<type type="string">Gear</type>
+					<weight type="number">0.1</weight>
+				</id-00016>
+				<id-00017>
+					<bulk type="string">2</bulk>
+					<carried type="number">2</carried>
+					<cost type="string">20 sp</cost>
+					<count type="number">1</count>
+					<damage type="string">1d12</damage>
+					<damagetype type="string">slashing</damagetype>
+					<description type="formattedtext">
+						<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often &#34;bearded,&#34; having a hook at the bottom to increase the strength of their chopping power.</p>
+					</description>
+					<group type="string">Axe</group>
+					<hands type="string">2</hands>
+					<isidentified type="number">1</isidentified>
+					<locked type="number">1</locked>
+					<name type="string">Greataxe</name>
+					<pfslegal type="string">False</pfslegal>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subtype type="string">Martial Melee</subtype>
+					<traits type="string">Sweep</traits>
+					<type type="string">Weapon</type>
+					<weight type="number">2</weight>
+				</id-00017>
+			</inventorylist>
+			<keyability type="string">strength</keyability>
+			<languagelist>
+				<id-00001>
+					<name type="string">Common</name>
+				</id-00001>
+				<id-00002>
+					<name type="string">Amurrun</name>
+				</id-00002>
+			</languagelist>
+			<level type="number">1</level>
+			<name type="string">Test</name>
+			<proficiencies>
+				<attacks>
+					<id-00001>
+						<name type="string">Simple weapons</name>
+						<prof type="number">3</prof>
+						<proflevel type="string">trained</proflevel>
+					</id-00001>
+					<id-00002>
+						<name type="string">Martial weapons</name>
+						<prof type="number">3</prof>
+						<proflevel type="string">trained</proflevel>
+					</id-00002>
+					<id-00003>
+						<name type="string">Unarmed attacks</name>
+						<prof type="number">3</prof>
+						<proflevel type="string">trained</proflevel>
+					</id-00003>
+				</attacks>
+				<defenses>
+					<id-00001>
+						<name type="string">Light armor</name>
+						<prof type="number">3</prof>
+						<proflevel type="string">trained</proflevel>
+					</id-00001>
+					<id-00002>
+						<name type="string">Medium armor</name>
+						<prof type="number">3</prof>
+						<proflevel type="string">trained</proflevel>
+					</id-00002>
+					<id-00003>
+						<name type="string">Unarmored</name>
+						<prof type="number">3</prof>
+						<proflevel type="string">trained</proflevel>
+					</id-00003>
+				</defenses>
+			</proficiencies>
+			<proficiencylist />
+			<race type="string">Catfolk</race>
+			<racelink type="windowreference">
+				<class>referencerace</class>
+				<recordname>reference.ancestries.catfolk@Pathfinder Advanced Player's Guide</recordname>
+			</racelink>
+			<saves>
+				<fortitude>
+					<base type="number">5</base>
+					<misc type="number">0</misc>
+					<proflevel type="string">expert</proflevel>
+					<temporary type="number">0</temporary>
+					<total type="number">6</total>
+				</fortitude>
+				<reflex>
+					<base type="number">3</base>
+					<misc type="number">0</misc>
+					<proflevel type="string">trained</proflevel>
+					<temporary type="number">0</temporary>
+					<total type="number">5</total>
+				</reflex>
+				<will>
+					<base type="number">5</base>
+					<misc type="number">0</misc>
+					<proflevel type="string">expert</proflevel>
+					<temporary type="number">0</temporary>
+					<total type="number">4</total>
+				</will>
+			</saves>
+			<senses type="string">Low-Light Vision, Darkvision</senses>
+			<size type="string">Medium</size>
+			<skilllist>
+				<id-00001>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Arcana</label>
+					<misc type="number">0</misc>
+					<prof type="number">3</prof>
+					<proflevel type="string">trained</proflevel>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">2</stat>
+					<state type="number">0</state>
+					<statname type="string">intelligence</statname>
+					<total type="number">5</total>
+				</id-00001>
+				<id-00002>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Occultism</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">2</stat>
+					<state type="number">0</state>
+					<statname type="string">intelligence</statname>
+					<total type="number">2</total>
+				</id-00002>
+				<id-00003>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Diplomacy</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">1</stat>
+					<state type="number">0</state>
+					<statname type="string">charisma</statname>
+					<total type="number">1</total>
+				</id-00003>
+				<id-00004>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Nature</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">-1</stat>
+					<state type="number">0</state>
+					<statname type="string">wisdom</statname>
+					<total type="number">-1</total>
+				</id-00004>
+				<id-00005>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Medicine</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">-1</stat>
+					<state type="number">0</state>
+					<statname type="string">wisdom</statname>
+					<total type="number">-1</total>
+				</id-00005>
+				<id-00006>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Perception</label>
+					<misc type="number">0</misc>
+					<prof type="number">5</prof>
+					<proflevel type="string">expert</proflevel>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">-1</stat>
+					<state type="number">0</state>
+					<statname type="string">wisdom</statname>
+					<total type="number">4</total>
+				</id-00006>
+				<id-00007>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Crafting</label>
+					<misc type="number">0</misc>
+					<prof type="number">3</prof>
+					<proflevel type="string">trained</proflevel>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">2</stat>
+					<state type="number">0</state>
+					<statname type="string">intelligence</statname>
+					<total type="number">5</total>
+				</id-00007>
+				<id-00008>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Performance</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">1</stat>
+					<state type="number">0</state>
+					<statname type="string">charisma</statname>
+					<total type="number">1</total>
+				</id-00008>
+				<id-00009>
+					<armorcheckmultiplier type="number">1</armorcheckmultiplier>
+					<label type="string">Acrobatics</label>
+					<misc type="number">0</misc>
+					<prof type="number">3</prof>
+					<proflevel type="string">trained</proflevel>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">2</stat>
+					<state type="number">0</state>
+					<statname type="string">dexterity</statname>
+					<total type="number">5</total>
+				</id-00009>
+				<id-00010>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Religion</label>
+					<misc type="number">0</misc>
+					<prof type="number">3</prof>
+					<proflevel type="string">trained</proflevel>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">-1</stat>
+					<state type="number">0</state>
+					<statname type="string">wisdom</statname>
+					<total type="number">2</total>
+				</id-00010>
+				<id-00011>
+					<armorcheckmultiplier type="number">1</armorcheckmultiplier>
+					<label type="string">Athletics</label>
+					<misc type="number">0</misc>
+					<prof type="number">3</prof>
+					<proflevel type="string">trained</proflevel>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">4</stat>
+					<state type="number">0</state>
+					<statname type="string">strength</statname>
+					<total type="number">7</total>
+				</id-00011>
+				<id-00012>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Intimidation</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">1</stat>
+					<state type="number">0</state>
+					<statname type="string">charisma</statname>
+					<total type="number">1</total>
+				</id-00012>
+				<id-00013>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Deception</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">1</stat>
+					<state type="number">0</state>
+					<statname type="string">charisma</statname>
+					<total type="number">1</total>
+				</id-00013>
+				<id-00014>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Society</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">2</stat>
+					<state type="number">0</state>
+					<statname type="string">intelligence</statname>
+					<total type="number">2</total>
+				</id-00014>
+				<id-00015>
+					<armorcheckmultiplier type="number">1</armorcheckmultiplier>
+					<label type="string">Stealth</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">2</stat>
+					<state type="number">0</state>
+					<statname type="string">dexterity</statname>
+					<total type="number">2</total>
+				</id-00015>
+				<id-00016>
+					<armorcheckmultiplier type="number">1</armorcheckmultiplier>
+					<label type="string">Thievery</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">2</stat>
+					<state type="number">0</state>
+					<statname type="string">dexterity</statname>
+					<total type="number">2</total>
+				</id-00016>
+				<id-00017>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Survival</label>
+					<misc type="number">0</misc>
+					<prof type="number">0</prof>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">-1</stat>
+					<state type="number">0</state>
+					<statname type="string">wisdom</statname>
+					<total type="number">-1</total>
+				</id-00017>
+				<id-00018>
+					<armorcheckmultiplier type="number">0</armorcheckmultiplier>
+					<label type="string">Lore</label>
+					<misc type="number">0</misc>
+					<prof type="number">3</prof>
+					<proflevel type="string">trained</proflevel>
+					<showonminisheet type="number">1</showonminisheet>
+					<stat type="number">2</stat>
+					<state type="number">1</state>
+					<statname type="string">intelligence</statname>
+					<sublabel type="string">Scribing</sublabel>
+					<total type="number">5</total>
+				</id-00018>
+			</skilllist>
+			<skillpoints>
+				<spent type="number">0</spent>
+			</skillpoints>
+			<specialabilitylist>
+				<id-00001>
+					<automation type="string">[EFFECT character OFF DMG: 2 melee; AC: -1]</automation>
+					<automation_applied type="string">=</automation_applied>
+					<classname type="string">Barbarian</classname>
+					<level type="number">1</level>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Rage</name>
+					<shortcut type="windowreference">
+						<class>referenceclassability</class>
+						<recordname>charsheet.id-00001.specialabilitylist.id-00001</recordname>
+					</shortcut>
+					<source type="string">Barbarian</source>
+					<text type="formattedtext">
+						<p>You gain the Rage action, which lets you fly into a frenzy.</p>
+						<p>
+							<b>Rage &#141;</b>
+						</p>
+						<p>BARBARIAN CONCENTRATE EMOTION MENTAL</p>
+						<p>
+							<b>Requirements </b>You aren't fatigued or raging.</p>
+						<p>You tap into your inner fury and begin raging. You gain a number of temporary Hit Points equal to your level plus your Constitution modifier. This frenzy lasts for 1 minute, until there are no enemies you can perceive, or until you fall unconscious, whichever comes first. You can't voluntarily stop raging. While you are raging:</p>
+						<list>
+							<li>You deal 2 additional damage on melee strikes. This additional damage is halved if your weapon or unarmed attack is agile.</li>
+							<li>You take a -1 penalty to AC.</li>
+							<li>You can't use actions with the concentrate trait unless they also have the rage trait. You can Seek while raging.</li>
+						</list>
+						<p>After you stop raging, you lose any remaining temporary Hit Points from Rage, and you can't Rage again for 1 minute.</p>
+					</text>
+				</id-00001>
+				<id-00002>
+					<classname type="string">Barbarian</classname>
+					<level type="number">1</level>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">INSTINCTS</name>
+					<shortcut type="windowreference">
+						<class>referenceclassability</class>
+						<recordname>charsheet.id-00001.specialabilitylist.id-00002</recordname>
+					</shortcut>
+					<source type="string">Barbarian</source>
+					<text type="formattedtext">
+						<p>You channel your rage through an instinct. You decide what your instinct means to you. It could be a creature or symbol beloved by your clan, or a purely internal source or filter of your rage, such as a belief, curse, heritage, or state of mind. Each instinct grants an instinct ability, plus more abilities you can gain via feats that list that instinct as a prerequisite. It also determines what damage you resist with raging resistance and, at higher levels, increases the additional damage you deal when you Rage.</p>
+						<p>Each instinct lists acts that are anathema to it. Whenever you perform such acts, you lose the instinct's abilities and any feats that list your instinct as a prerequisite until you spend 1 day of downtime re-centering yourself, though you keep all of your other barbarian abilities.</p>
+					</text>
+				</id-00002>
+				<id-00003>
+					<classname type="string">Barbarian</classname>
+					<level type="number">1</level>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Instinct</name>
+					<shortcut type="windowreference">
+						<class>referenceclassability</class>
+						<recordname>charsheet.id-00001.specialabilitylist.id-00003</recordname>
+					</shortcut>
+					<source type="string">Barbarian</source>
+					<text type="formattedtext">
+						<p>Your rage wells up from a dominant instinctone you learned from a tradition or that comes naturally to you. Your instinct gives you an ability, requires you to avoid certain behaviors, grants you increased damage and resistances at higher levels, and allows you to select feats tied to your instinct. For more information, see the class ability &#34;Instincts&#34;.</p>
+					</text>
+				</id-00003>
+				<id-00004>
+					<automation type="string">[CHOICE class|barbarian|instinct]</automation>
+					<classname type="string">Barbarian</classname>
+					<level type="number">1</level>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Choice - Barbarian Instinct.</name>
+					<shortcut type="windowreference">
+						<class>referenceclassability</class>
+						<recordname>charsheet.id-00001.specialabilitylist.id-00004</recordname>
+					</shortcut>
+					<source type="string">Barbarian</source>
+				</id-00004>
+				<id-00005>
+					<automation type="string">[CHOICE class|barbarian|instinct-animal]</automation>
+					<category type="string">Barbarian</category>
+					<islocked type="number">1</islocked>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<lookupdata_features>
+						<animalinstinct_anathemaanimalinstinct>
+							<islocked type="number">1</islocked>
+							<level type="number">1</level>
+							<name type="string">Anathema (Animal Instinct)</name>
+							<text type="formattedtext">
+								<p>Flagrantly disrespecting an animal of your chosen kind is anathema to your instinct, as is using weapons while raging.</p>
+							</text>
+						</animalinstinct_anathemaanimalinstinct>
+						<animalinstinct_bestialrageanimalinstinctability>
+							<islocked type="number">1</islocked>
+							<level type="number">1</level>
+							<name type="string">Bestial Rage (Animal Instinct Ability)</name>
+							<text type="formattedtext">
+								<p>When you Rage, you gain your chosen animal's unarmed attack (or attacks). The specific attack gained, the damage it deals, and its traits are listed on Table 3-3: Animal Instincts. These attacks are in the brawling group. Your Rage action gains the morph, primal, and transmutation traits.</p>
+								<h>TABLE 3-3: ANIMAL INSTINCTS</h>
+								<table>
+									<tr>
+										<td>
+											<b>Animal</b>
+										</td>
+										<td>
+											<b>Attack</b>
+										</td>
+										<td>
+											<b>Damage</b>
+										</td>
+										<td>
+											<b>Traits</b>
+										</td>
+									</tr>
+									<tr>
+										<td>Ape</td>
+										<td>Fist</td>
+										<td>1d10 B</td>
+										<td>Grapple, unarmed</td>
+									</tr>
+									<tr>
+										<td>Bear</td>
+										<td>Jaws</td>
+										<td>1d10 P</td>
+										<td>Unarmed</td>
+									</tr>
+									<tr>
+										<td />
+										<td>Claw</td>
+										<td>1d6 S</td>
+										<td>Agile, unarmed</td>
+									</tr>
+									<tr>
+										<td>Bull</td>
+										<td>Horn</td>
+										<td>1d10 P</td>
+										<td>Shove, unarmed</td>
+									</tr>
+									<tr>
+										<td>Cat</td>
+										<td>Jaws</td>
+										<td>1d10 P</td>
+										<td>Unarmed</td>
+									</tr>
+									<tr>
+										<td />
+										<td>Claw</td>
+										<td>1d6 S</td>
+										<td>Agile, unarmed</td>
+									</tr>
+									<tr>
+										<td>Deer</td>
+										<td>Antler</td>
+										<td>1d10 P</td>
+										<td>Grapple, unarmed</td>
+									</tr>
+									<tr>
+										<td>Frog</td>
+										<td>Jaws</td>
+										<td>1d10 B</td>
+										<td>Unarmed</td>
+									</tr>
+									<tr>
+										<td />
+										<td>Tongue</td>
+										<td>1d4 B</td>
+										<td>Agile, unarmed</td>
+									</tr>
+									<tr>
+										<td>Shark</td>
+										<td>Jaws</td>
+										<td>1d10 P</td>
+										<td>Grapple, unarmed</td>
+									</tr>
+									<tr>
+										<td>Snake</td>
+										<td>Fangs</td>
+										<td>1d10 P</td>
+										<td>Grapple, unarmed</td>
+									</tr>
+									<tr>
+										<td>Wolf</td>
+										<td>Jaws</td>
+										<td>1d10 P</td>
+										<td>Trip, unarmed</td>
+									</tr>
+								</table>
+							</text>
+						</animalinstinct_bestialrageanimalinstinctability>
+						<animalinstinct_ragingresistanceanimalinstinct>
+							<islocked type="number">1</islocked>
+							<level type="number">9</level>
+							<name type="string">Raging Resistance (Animal Instinct)</name>
+							<text type="formattedtext">
+								<p>You resist piercing and slashing damage.</p>
+							</text>
+						</animalinstinct_ragingresistanceanimalinstinct>
+						<animalinstinct_specializationabilityanimalinstinct>
+							<islocked type="number">1</islocked>
+							<level type="number">7</level>
+							<name type="string">Specialization Ability (Animal Instinct)</name>
+							<text type="formattedtext">
+								<p>Increase the damage die size for the unarmed attacks granted by your chosen animal by one step, and increase the additional damage from Rage from 2 to 5 for your chosen animal's unarmed attacks. The frog's tongue attack and deer's antler attack gain reach 10 feet. If you have greater weapon specialization, increase the damage from Rage from 5 to 12 for your chosen animal's unarmed attacks.</p>
+							</text>
+						</animalinstinct_specializationabilityanimalinstinct>
+					</lookupdata_features>
+					<lookupdatatype type="string">Class</lookupdatatype>
+					<name type="string">Animal Instinct</name>
+					<shortcut type="windowreference">
+						<class>reference_lookupdata</class>
+						<recordname>charsheet.id-00001.specialabilitylist.id-00005</recordname>
+					</shortcut>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subcategory type="string">Instinct</subcategory>
+					<text type="formattedtext">
+						<p>The fury of a wild predator fills you when you Rage, granting you ferocious unarmed attacks. Cultures that revere vicious animals (such as apes or bears) give rise to barbarians with this instinct. You might also be at war with an uncontrollable, animalistic side of your personality, or you might be a descendant of a werewolf or another werecreature. Select an animal from Table 3-3: Animal Instincts that best matches your chosen animal.</p>
+						<h>TABLE 3-3: ANIMAL INSTINCTS</h>
+						<table>
+							<tr>
+								<td>
+									<b>Animal</b>
+								</td>
+								<td>
+									<b>Attack</b>
+								</td>
+								<td>
+									<b>Damage</b>
+								</td>
+								<td>
+									<b>Traits</b>
+								</td>
+							</tr>
+							<tr>
+								<td>Ape</td>
+								<td>Fist</td>
+								<td>1d10 B</td>
+								<td>Grapple, unarmed</td>
+							</tr>
+							<tr>
+								<td>Bear</td>
+								<td>Jaws</td>
+								<td>1d10 P</td>
+								<td>Unarmed</td>
+							</tr>
+							<tr>
+								<td />
+								<td>Claw</td>
+								<td>1d6 S</td>
+								<td>Agile, unarmed</td>
+							</tr>
+							<tr>
+								<td>Bull</td>
+								<td>Horn</td>
+								<td>1d10 P</td>
+								<td>Shove, unarmed</td>
+							</tr>
+							<tr>
+								<td>Cat</td>
+								<td>Jaws</td>
+								<td>1d10 P</td>
+								<td>Unarmed</td>
+							</tr>
+							<tr>
+								<td />
+								<td>Claw</td>
+								<td>1d6 S</td>
+								<td>Agile, unarmed</td>
+							</tr>
+							<tr>
+								<td>Deer</td>
+								<td>Antler</td>
+								<td>1d10 P</td>
+								<td>Grapple, unarmed</td>
+							</tr>
+							<tr>
+								<td>Frog</td>
+								<td>Jaws</td>
+								<td>1d10 B</td>
+								<td>Unarmed</td>
+							</tr>
+							<tr>
+								<td />
+								<td>Tongue</td>
+								<td>1d4 B</td>
+								<td>Agile, unarmed</td>
+							</tr>
+							<tr>
+								<td>Shark</td>
+								<td>Jaws</td>
+								<td>1d10 P</td>
+								<td>Grapple, unarmed</td>
+							</tr>
+							<tr>
+								<td>Snake</td>
+								<td>Fangs</td>
+								<td>1d10 P</td>
+								<td>Grapple, unarmed</td>
+							</tr>
+							<tr>
+								<td>Wolf</td>
+								<td>Jaws</td>
+								<td>1d10 P</td>
+								<td>Trip, unarmed</td>
+							</tr>
+						</table>
+						<h>Anathema</h>
+						<p>Flagrantly disrespecting an animal of your chosen kind is anathema to your instinct, as is using weapons while raging.</p>
+						<h>Bestial Rage (Instinct Ability)</h>
+						<p>When you Rage, you gain your chosen animal's unarmed attack (or attacks). The specific attack gained, the damage it deals, and its traits are listed on Table 3-3: Animal Instincts. These attacks are in the brawling group. Your Rage action gains the morph, primal, and transmutation traits.</p>
+						<h>Specialization Ability 7th</h>
+						<p>Increase the damage die size for the unarmed attacks granted by your chosen animal by one step, and increase the additional damage from Rage from 2 to 5 for your chosen animal's unarmed attacks. The frog's tongue attack and deer's antler attack gain reach 10 feet. If you have greater weapon specialization, increase the damage from Rage from 5 to 12 for your chosen animal's unarmed attacks.</p>
+						<h>Raging Resistance 9th</h>
+						<p>You resist piercing and slashing damage.</p>
+					</text>
+				</id-00005>
+				<id-00006>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Anathema (Animal Instinct)</name>
+					<shortcut type="windowreference">
+						<class>referenceclassability</class>
+						<recordname>charsheet.id-00001.specialabilitylist.id-00006</recordname>
+					</shortcut>
+					<text type="formattedtext">
+						<p>Flagrantly disrespecting an animal of your chosen kind is anathema to your instinct, as is using weapons while raging.</p>
+					</text>
+				</id-00006>
+				<id-00007>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Bestial Rage (Animal Instinct Ability)</name>
+					<shortcut type="windowreference">
+						<class>referenceclassability</class>
+						<recordname>charsheet.id-00001.specialabilitylist.id-00007</recordname>
+					</shortcut>
+					<text type="formattedtext">
+						<p>When you Rage, you gain your chosen animal's unarmed attack (or attacks). The specific attack gained, the damage it deals, and its traits are listed on Table 3-3: Animal Instincts. These attacks are in the brawling group. Your Rage action gains the morph, primal, and transmutation traits.</p>
+						<h>TABLE 3-3: ANIMAL INSTINCTS</h>
+						<table>
+							<tr>
+								<td>
+									<b>Animal</b>
+								</td>
+								<td>
+									<b>Attack</b>
+								</td>
+								<td>
+									<b>Damage</b>
+								</td>
+								<td>
+									<b>Traits</b>
+								</td>
+							</tr>
+							<tr>
+								<td>Ape</td>
+								<td>Fist</td>
+								<td>1d10 B</td>
+								<td>Grapple, unarmed</td>
+							</tr>
+							<tr>
+								<td>Bear</td>
+								<td>Jaws</td>
+								<td>1d10 P</td>
+								<td>Unarmed</td>
+							</tr>
+							<tr>
+								<td />
+								<td>Claw</td>
+								<td>1d6 S</td>
+								<td>Agile, unarmed</td>
+							</tr>
+							<tr>
+								<td>Bull</td>
+								<td>Horn</td>
+								<td>1d10 P</td>
+								<td>Shove, unarmed</td>
+							</tr>
+							<tr>
+								<td>Cat</td>
+								<td>Jaws</td>
+								<td>1d10 P</td>
+								<td>Unarmed</td>
+							</tr>
+							<tr>
+								<td />
+								<td>Claw</td>
+								<td>1d6 S</td>
+								<td>Agile, unarmed</td>
+							</tr>
+							<tr>
+								<td>Deer</td>
+								<td>Antler</td>
+								<td>1d10 P</td>
+								<td>Grapple, unarmed</td>
+							</tr>
+							<tr>
+								<td>Frog</td>
+								<td>Jaws</td>
+								<td>1d10 B</td>
+								<td>Unarmed</td>
+							</tr>
+							<tr>
+								<td />
+								<td>Tongue</td>
+								<td>1d4 B</td>
+								<td>Agile, unarmed</td>
+							</tr>
+							<tr>
+								<td>Shark</td>
+								<td>Jaws</td>
+								<td>1d10 P</td>
+								<td>Grapple, unarmed</td>
+							</tr>
+							<tr>
+								<td>Snake</td>
+								<td>Fangs</td>
+								<td>1d10 P</td>
+								<td>Grapple, unarmed</td>
+							</tr>
+							<tr>
+								<td>Wolf</td>
+								<td>Jaws</td>
+								<td>1d10 P</td>
+								<td>Trip, unarmed</td>
+							</tr>
+						</table>
+					</text>
+				</id-00007>
+				<id-00008>
+					<automation type="string">[WEAPON add Fist|Unarmed attack|Brawling|1d10|bludgeoning|grapple, unarmed|1|-]</automation>
+					<automation_applied type="string">=</automation_applied>
+					<category type="string">Barbarian</category>
+					<islocked type="number">1</islocked>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<lookupdata_features />
+					<lookupdatatype type="string">Class</lookupdatatype>
+					<name type="string">Bestial Rage - Ape (Animal Instinct)</name>
+					<shortcut type="windowreference">
+						<class>reference_lookupdata</class>
+						<recordname>charsheet.id-00001.specialabilitylist.id-00008</recordname>
+					</shortcut>
+					<source type="string">Pathfinder Second Edition Core Rules</source>
+					<subcategory type="string">Instinct-Animal</subcategory>
+					<text type="formattedtext">
+						<p>The fury of a wild predator fills you when you Rage, granting you ferocious unarmed attacks.</p>
+						<p>When you Rage, you gain your chosen animal's unarmed attack (or attacks). Your Rage action gains the morph, primal, and transmutation traits.</p>
+						<h>TABLE 3-3: ANIMAL INSTINCTS (APE)</h>
+						<table>
+							<tr>
+								<td>
+									<b>Animal</b>
+								</td>
+								<td>
+									<b>Attack</b>
+								</td>
+								<td>
+									<b>Damage</b>
+								</td>
+								<td>
+									<b>Traits</b>
+								</td>
+							</tr>
+							<tr>
+								<td>Ape</td>
+								<td>Fist</td>
+								<td>1d10 B</td>
+								<td>Grapple, unarmed</td>
+							</tr>
+						</table>
+					</text>
+				</id-00008>
+			</specialabilitylist>
+			<speed>
+				<armor type="number">0</armor>
+				<base type="number">25</base>
+				<final type="number">25</final>
+				<misc type="number">0</misc>
+				<temporary type="number">0</temporary>
+			</speed>
+			<temp />
+			<token type="token"></token>
+			<traitlist>
+				<id-00001>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Bonus Languages</name>
+					<source type="string">Catfolk</source>
+					<text type="formattedtext">
+						<p>Additional languages equal to your Intelligence modifier (if it's positive). Choose from Draconic, Elven, Gnomish, Goblin, Halfling, Iruxi (the language of lizardfolk), Jotun, Sylvan, and any other languages to which you have access (such as the languages prevalent in your region).</p>
+					</text>
+				</id-00001>
+				<id-00002>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Low-Light Vision</name>
+					<source type="string">Catfolk</source>
+					<text type="formattedtext">
+						<p>You can see in dim light as though it were bright light, so you ignore the concealed condition due to dim light.</p>
+					</text>
+				</id-00002>
+				<id-00003>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Land on Your Feet</name>
+					<source type="string">Catfolk</source>
+					<text type="formattedtext">
+						<p>When you fall, you take only half the normal damage and don't land prone.</p>
+					</text>
+				</id-00003>
+				<id-00004>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Ancestry Feats</name>
+					<source type="string">Catfolk</source>
+					<text type="formattedtext">
+						<p>At 1st level, you gain one ancestry feat, and you gain an additional ancestry feat every 4 levels thereafter (at 5th, 9th, 13th, and 17th levels). As a catfolk, you select from among ancestry feats with the &#34;Catfolk&#34; trait.</p>
+					</text>
+				</id-00004>
+				<id-00005>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Heritage - Clawed Catfolk</name>
+					<source type="string">Catfolk</source>
+					<text type="formattedtext">
+						<p>Your family has particularly long, sharp claws capable of delivering bleeding wounds with a wicked swipe. You gain a claw unarmed attack that deals 1d6 slashing damage. Your claws are in the brawling group and have the agile, finesse, and unarmed traits.</p>
+					</text>
+				</id-00005>
+				<id-00006>
+					<automation type="string">[WEAPON add Claw|Unarmed attack|Brawling|1d6|slashing|agile, finesse, unarmed|1|-]</automation>
+					<automation_applied type="string">=</automation_applied>
+					<level_applied type="number">1</level_applied>
+					<locked type="number">1</locked>
+					<name type="string">Clawed Catfolk feature</name>
+					<text type="formattedtext">
+						<p>You gain a claw unarmed attack that deals 1d6 slashing damage. Your claws are in the brawling group and have the agile, finesse, and unarmed traits.</p>
+					</text>
+				</id-00006>
+			</traitlist>
+			<traits type="string">Catfolk, Humanoid</traits>
+			<wealth>
+				<copper type="number">0</copper>
+				<gold type="number">6</gold>
+				<platinum type="number">0</platinum>
+				<silver type="number">1</silver>
+			</wealth>
+			<weaponlist>
+				<id-00001>
+					<attack2modifier type="number">1</attack2modifier>
+					<attack3modifier type="number">2</attack3modifier>
+					<attacks type="number">3</attacks>
+					<attackstat type="string">dexterity</attackstat>
+					<bonus type="number">0</bonus>
+					<critatkrange type="number">20</critatkrange>
+					<damagelist>
+						<id-00001>
+							<bonus type="number">0</bonus>
+							<critmult type="number">2</critmult>
+							<dice type="dice">d6</dice>
+							<stat type="string">strength</stat>
+							<type type="string">slashing</type>
+						</id-00001>
+					</damagelist>
+					<group type="string">Brawling</group>
+					<isidentified type="number">1</isidentified>
+					<name type="string">Claw</name>
+					<prof type="number">0</prof>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00001</recordname>
+					</shortcut>
+					<traits type="string">agile, finesse, unarmed</traits>
+					<type type="number">0</type>
+				</id-00001>
+				<id-00002>
+					<attacks type="number">3</attacks>
+					<bonus type="number">0</bonus>
+					<critatkrange type="number">20</critatkrange>
+					<damagelist>
+						<id-00001>
+							<bonus type="number">0</bonus>
+							<critmult type="number">2</critmult>
+							<dice type="dice">d10</dice>
+							<stat type="string">strength</stat>
+							<type type="string">bludgeoning</type>
+						</id-00001>
+					</damagelist>
+					<group type="string">Brawling</group>
+					<isidentified type="number">1</isidentified>
+					<name type="string">Fist</name>
+					<prof type="number">3</prof>
+					<proflevel type="string">trained</proflevel>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00002</recordname>
+					</shortcut>
+					<traits type="string">grapple, unarmed</traits>
+					<type type="number">0</type>
+				</id-00002>
+				<id-00003>
+					<attacks type="number">3</attacks>
+					<bonus type="number">0</bonus>
+					<critatkrange type="number">20</critatkrange>
+					<damagelist>
+						<id-00001>
+							<bonus type="number">0</bonus>
+							<critmult type="number">2</critmult>
+							<dice type="dice">d6</dice>
+							<stat type="string">strength</stat>
+							<type type="string">piercing</type>
+						</id-00001>
+					</damagelist>
+					<group type="string">Dart</group>
+					<isidentified type="number">1</isidentified>
+					<name type="string">Javelin</name>
+					<prof type="number">3</prof>
+					<proflevel type="string">trained</proflevel>
+					<rangeincrement type="number">30</rangeincrement>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00005</recordname>
+					</shortcut>
+					<traits type="string">Thrown</traits>
+					<type type="number">1</type>
+				</id-00003>
+				<id-00004>
+					<attacks type="number">3</attacks>
+					<bonus type="number">0</bonus>
+					<critatkrange type="number">20</critatkrange>
+					<damagelist>
+						<id-00001>
+							<bonus type="number">0</bonus>
+							<critmult type="number">2</critmult>
+							<dice type="dice">d12</dice>
+							<stat type="string">strength</stat>
+							<type type="string">slashing</type>
+						</id-00001>
+					</damagelist>
+					<group type="string">Axe</group>
+					<isidentified type="number">1</isidentified>
+					<name type="string">Greataxe</name>
+					<prof type="number">3</prof>
+					<proflevel type="string">trained</proflevel>
+					<shortcut type="windowreference">
+						<class>item</class>
+						<recordname>....inventorylist.id-00017</recordname>
+					</shortcut>
+					<traits type="string">Sweep</traits>
+					<type type="number">0</type>
+				</id-00004>
+			</weaponlist>
+		</id-00001>
+	</charsheet>
