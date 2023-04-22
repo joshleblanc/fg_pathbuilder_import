@@ -12,7 +12,6 @@ function findDeity(value)
   --Debug.console(records)
   for _, record in pairs(records) do
     local sRecordName = StringManager.trim(DB.getValue(record, "name", ""))
-    Debug.console(sRecordName)
 
     -- deity is free text on pathbuilder, so do our best
     if StringManager.startsWith(sRecordName:lower(), value:lower()) then
@@ -26,8 +25,7 @@ function import(node, value)
 
   local deity = findDeity(value)
 
-  if deity then 
-    DB.setValue(node, "deity", "string", DB.getValue(deity, "name", ""))
-    DB.setValue(node, "deitylink", "windowreference", "referenceclass", deity.getNodeName())
-  end
+  if not deity then return end 
+
+  CharManager.addInfoDB(node, "reference_lookupdata", deity.getNodeName())
 end
