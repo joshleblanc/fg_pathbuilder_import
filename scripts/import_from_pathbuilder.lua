@@ -75,11 +75,23 @@ function onWindowOpened(window)
   end
 end
 
+--[[
+  Some fields only get created when the character sheet window opens, but they're used
+  during calculations. So we need to create them prior to beginning the import
+]]
+function buildRequiredNodes(node)
+  node.createChild("saves.fortitude")
+  node.createChild("saves.reflex")
+  node.createChild("saves.will")
+end
+
 -- NOTE: rulesets/PFRPG2.pak/campaign/scripts/manager_char.lua has some good stuff in it
 function doPBImport(pcJson, importWindow)
     running = true
     data = JSONUtil.parseJson(pcJson)
     local nodeChar = DB.createChild("charsheet");
+
+    buildRequiredNodes(nodeChar)
 
     EachKey(function(key, value)
       if DBMap[key] then
