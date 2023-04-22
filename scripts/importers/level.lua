@@ -1,4 +1,5 @@
 function import(node, value)
-  DB.setValue(node, "level", "number", value)
-  CharManager.recalcProficiencies(node)
+  for i=1,value - 1 do
+    CharManager.addLevel(node)
+  end
 end

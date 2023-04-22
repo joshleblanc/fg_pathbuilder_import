@@ -3,7 +3,7 @@
   "build": {
     "name": "Test Fighter",
     "class": "Fighter",
-    "level": 1,
+    "level": 5,
     "ancestry": "Human",
     "heritage": "Half-Elf",
     "background": "Barkeep",
