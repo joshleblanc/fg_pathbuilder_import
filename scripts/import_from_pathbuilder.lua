@@ -43,7 +43,10 @@ function onInit()
       society = Skill.import,
       survival = Skill.import,
       thievery = Skill.import,
-
+      perception = Skill.import,
+      fortitude = Skill.import,
+      reflex = Skill.import,
+      feats = Feat.import
     }
 end
 
@@ -81,7 +84,17 @@ function doPBImport(pcJson, importWindow)
     EachKey(function(key, value)
       if DBMap[key] then
         -- Debug.print("Importing: " .. key)
-        DBMap[key](nodeChar, value, key)
+
+        -- if the value is an array, run the import on each element
+        if type(value) == "table" then
+          for _, el in ipairs(value) do
+            DBMap[key](nodeChar, el, key)
+          end
+        -- otherwise just pass the value
+        else 
+          DBMap[key](nodeChar, value, key)
+        end
+        
       else
         -- Debug.print("No mapping found for: " .. key)
       end
