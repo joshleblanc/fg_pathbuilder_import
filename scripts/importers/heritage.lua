@@ -1,4 +1,4 @@
-function findDeity(value)
+function findHeritage(value)
   local records = DB.getChildrenGlobal("reference.lookupdata")
 
   --Debug.console(records)
@@ -6,18 +6,16 @@ function findDeity(value)
     local sRecordName = StringManager.trim(DB.getValue(record, "name", ""))
 
     -- deity is free text on pathbuilder, so do our best
-    if StringManager.startsWith(sRecordName:lower(), value:lower()) then
+    if sRecordName:lower() == value:lower() then
         return record
     end
   end
 end
 
 function import(node, value)
-  if value == "Not set" then return end
+  local heritage = findHeritage(value)
 
-  local deity = findDeity(value)
+  if not heritage then return end 
 
-  if not deity then return end 
-
-  CharManager.addInfoDB(node, "reference_lookupdata", deity.getNodeName())
+  CharManager.addInfoDB(node, "reference_lookupdata", heritage.getNodeName())
 end

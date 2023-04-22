@@ -25,6 +25,7 @@ function onInit()
       deity = Deity.import,
       keyability = KeyAbility.import,
       level = Level.import,
+      heritage = Heritage.import
     }
 end
 
