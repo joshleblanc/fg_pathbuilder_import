@@ -25,7 +25,23 @@ function onInit()
       deity = Deity.import,
       keyability = KeyAbility.import,
       level = Level.import,
-      heritage = Heritage.import
+      heritage = Heritage.import,
+      acrobatics = Skill.import,
+      arcana = Skill.import,
+      athletics = Skill.import,
+      crafting = Skill.import,
+      deception = Skill.import,
+      diplomacy = Skill.import,
+      intimidation = Skill.import,
+      medicine = Skill.import,
+      nature = Skill.import,
+      occultism = Skill.import,
+      performance = Skill.import,
+      religion = Skill.import,
+      society = Skill.import,
+      survival = Skill.import,
+      thievery = Skill.import,
+
     }
 end
 

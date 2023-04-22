@@ -3,7 +3,7 @@
   "build": {
     "name": "Test Fighter",
     "class": "Fighter",
-    "level": 1,
+    "level": 5,
     "ancestry": "Human",
     "heritage": "Half-Elf",
     "background": "Barkeep",
@@ -23,19 +23,19 @@
       "speedBonus": 0
     },
     "abilities": {
-      "str": 18,
+      "str": 19,
       "dex": 14,
-      "con": 14,
+      "con": 16,
       "int": 10,
-      "wis": 12,
-      "cha": 10
+      "wis": 14,
+      "cha": 12
     },
     "proficiencies": {
       "classDC": 2,
       "perception": 4,
       "fortitude": 4,
       "reflex": 4,
-      "will": 2,
+      "will": 4,
       "heavy": 2,
       "medium": 2,
       "light": 2,
@@ -48,10 +48,10 @@
       "castingDivine": 0,
       "castingOccult": 0,
       "castingPrimal": 0,
-      "acrobatics": 2,
+      "acrobatics": 4,
       "arcana": 0,
       "athletics": 0,
-      "crafting": 0,
+      "crafting": 2,
       "deception": 0,
       "diplomacy": 2,
       "intimidation": 2,
@@ -91,14 +91,56 @@
         null,
         "Class Feat",
         1
+      ],
+      [
+        "Eyes of the City",
+        null,
+        "Skill Feat",
+        2
+      ],
+      [
+        "Double Slice",
+        null,
+        "Class Feat",
+        2
+      ],
+      [
+        "Bon Mot",
+        null,
+        "General Feat",
+        3
+      ],
+      [
+        "Additional Lore",
+        null,
+        "Skill Feat",
+        4
+      ],
+      [
+        "Aggressive Block",
+        null,
+        "Class Feat",
+        4
+      ],
+      [
+        "Ageless Patience",
+        null,
+        "Ancestry Feat",
+        5
       ]
     ],
     "specials": [
       "Low-Light Vision",
       "Attack of Opportunity",
+      "Bravery",
+      "Axe",
       "Half-Elf"
     ],
     "lores": [
+      [
+        "Stone",
+        4
+      ],
       [
         "Alcohol",
         2
@@ -126,10 +168,10 @@
     "formula": [],
     "pets": [],
     "acTotal": {
-      "acProfBonus": 3,
+      "acProfBonus": 7,
       "acAbilityBonus": 2,
       "acItemBonus": 0,
-      "acTotal": 15
+      "acTotal": 19
     }
   }
 }

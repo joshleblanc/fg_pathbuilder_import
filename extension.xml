@@ -39,5 +39,6 @@
     <script name="KeyAbility" file="scripts/importers/key_ability.lua" />
     <script name="Level" file="scripts/importers/level.lua" />
     <script name="Heritage" file="scripts/importers/heritage.lua" />
+    <script name="Skill" file="scripts/importers/skill.lua" />
   </base>
 </root>
