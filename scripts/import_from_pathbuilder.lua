@@ -15,7 +15,9 @@ function onInit()
       ancestry = Ancestry.import,
       background = Background.import,
       class = Class.import,
-      alignment = Alignment.import
+      alignment = Alignment.import,
+      str = Characteristic.import,
+      deity = Deity.import
     }
 end
 
@@ -41,10 +43,10 @@ function doPBImport(pcJson, importWindow)
 
     EachKey(function(key, value)
       if DBMap[key] then
-        Debug.print("Importing: " .. key)
-        DBMap[key](nodeChar, value)
+        -- Debug.print("Importing: " .. key)
+        DBMap[key](nodeChar, value, key)
       else
-        Debug.print("No mapping found for: " .. key)
+        -- Debug.print("No mapping found for: " .. key)
       end
     end)
 end

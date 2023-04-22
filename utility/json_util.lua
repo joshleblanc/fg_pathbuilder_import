@@ -177,7 +177,7 @@ end
 function parseJson(stringToParse)
   local escapedString = unescape(stringToParse)
   local pcTable = parse(escapedString)
-  tprint(pcTable)
+  --tprint(pcTable)
   return pcTable
 end
 
