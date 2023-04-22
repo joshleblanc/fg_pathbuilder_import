@@ -10,16 +10,19 @@ local MAP = {
 
 -- this is being overwritten the first time you open the character sheet 
 function import(node, value, key)
-  local abilitiesNode = DB.createChild(node, "abilities")
-  local characteristicNode = DB.createChild(abilitiesNode, map(key))
-  
-  DB.setValue(characteristicNode, "bonus", "number", "1")
-  DB.setValue(characteristicNode, "bonusmodifier", "number", 0)
-  DB.setValue(characteristicNode, "damage", "number", 0)
-  DB.setValue(characteristicNode, "tempmod", "number", 0)
-  DB.setValue(characteristicNode, "chargen", "number", value)
-  DB.setValue(characteristicNode, "miscmod", "number", 0)
-  DB.setValue(characteristicNode, "score", "number", value)
+
+  local numToAdd = 0
+  local ones = value - 18
+
+  if ones > 0 then 
+    numToAdd = ones + 4
+  else
+    numToAdd = (value - 10) / 2
+  end
+
+  for i=1,numToAdd do
+    DB.setValue(node, "chargentracker.abilities.pathbuilder_import_" .. key .. "_" .. i, "string", map(key))
+  end
 end
 
 function map(value)
