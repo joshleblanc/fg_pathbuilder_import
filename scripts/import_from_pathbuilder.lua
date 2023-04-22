@@ -17,7 +17,14 @@ function onInit()
       class = Class.import,
       alignment = Alignment.import,
       str = Characteristic.import,
-      deity = Deity.import
+      dex = Characteristic.import,
+      con = Characteristic.import,
+      int = Characteristic.import,
+      wis = Characteristic.import,
+      cha = Characteristic.import,
+      deity = Deity.import,
+      keyability = KeyAbility.import,
+      level = Level.import,
     }
 end
 
@@ -37,9 +44,40 @@ function EachKey(fn, root)
   return nil
 end
 
+-- trying to get the "legacy data" popups to stop showing
+-- this didn't work
+function buildRequiredRoots(node)
+  local charGenTracker = DB.createChild(node, "chargentracker")
+  DB.setValue(charGenTracker, "opened", "number", 1)
+
+  DB.createChild(node, "ac")
+  DB.createChild(node, "attackbonus")
+  DB.createChild(node, "defenses")
+  DB.createChild(node, "effects")
+  DB.createChild(node, "encumbrance")
+  DB.createChild(node, "featlist")
+  DB.createChild(node, "hp")
+  DB.createChild(node, "initiative")
+  DB.createChild(node, "inventorylist")
+  DB.createChild(node, "languagelist")
+  DB.createChild(node, "proficiencies")
+  DB.createChild(node, "saves")
+  DB.createChild(node, "skilllist")
+  DB.createChild(node, "skillpoints")
+  DB.createChild(node, "specialabilitylist")
+  DB.createChild(node, "speed")
+  DB.createChild(node, "traitlist")
+  DB.createChild(node, "wealth")
+  DB.createChild(node, "coins")
+  DB.createChild(node, "weaponlist")
+end
+
+-- NOTE: rulesets/PFRPG2.pak/campaign/scripts/manager_char.lua has some good stuff in it
 function doPBImport(pcJson, importWindow)
     data = JSONUtil.parseJson(pcJson)
     local nodeChar = DB.createChild("charsheet");
+
+    buildRequiredRoots(nodeChar)
 
     EachKey(function(key, value)
       if DBMap[key] then
