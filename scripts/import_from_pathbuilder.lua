@@ -90,14 +90,13 @@ function doPBImport(pcJson, importWindow)
     for _, window in ipairs(windowsOpen) do 
       window.close()
     end
-
     windowsOpen = {}
+
+    DB.setValue(nodeChar, "chargentracker.opened", "number", 1)
 
     running = false
 
     Interface.dialogMessage(function() 
       -- do nothing
     end, "Import complete", "Pathbuilder Import")
-
-    
 end
