@@ -36,6 +36,8 @@
     <script name="Alignment" file="scripts/importers/alignment.lua" />
     <script name="Characteristic" file="scripts/importers/characteristic.lua" />
     <script name="Deity" file="scripts/importers/deity.lua" />
+    <script name="KeyAbility" file="scripts/importers/key_ability.lua" />
+    <script name="Level" file="scripts/importers/level.lua" />
 
   </base>
 </root>
