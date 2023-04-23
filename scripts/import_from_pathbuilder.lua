@@ -56,7 +56,8 @@ function onInit()
       spellCasters = Spell.import,
       specials = Special.import,
       languages = Language.import,
-      weapons = Weapon.import
+      weapons = Weapon.import,
+      armor = Weapon.import
     }
 end
 

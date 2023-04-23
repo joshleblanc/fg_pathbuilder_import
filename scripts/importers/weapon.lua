@@ -13,5 +13,5 @@
       }
 ]]
 function import(node, value)
-  Equipment.import(node, { value.name, value.qty })
+  Equipment.import(node, { value.display, value.qty })
 end
