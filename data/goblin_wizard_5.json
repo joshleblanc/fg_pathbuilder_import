@@ -231,11 +231,34 @@
     ],
     "money": {
       "pp": 0,
-      "gp": 12,
+      "gp": 10,
       "sp": 0,
       "cp": 0
     },
-    "armor": [],
+    "armor": [
+      {
+        "name": "Leather Armor",
+        "qty": 1,
+        "prof": "light",
+        "pot": 0,
+        "res": "",
+        "mat": null,
+        "display": "Leather",
+        "worn": true,
+        "runes": []
+      },
+      {
+        "name": "Leather Armor",
+        "qty": 1,
+        "prof": "unarmored",
+        "pot": 0,
+        "res": "",
+        "mat": null,
+        "display": "Unarmored",
+        "worn": false,
+        "runes": []
+      }
+    ],
     "focus": {
       "focusPoints": 1,
       "arcane": {
@@ -320,10 +343,10 @@
     "formula": [],
     "pets": [],
     "acTotal": {
-      "acProfBonus": 7,
+      "acProfBonus": 0,
       "acAbilityBonus": 1,
-      "acItemBonus": 0,
-      "acTotal": 18
+      "acItemBonus": 1,
+      "acTotal": 12
     }
   }
 }
