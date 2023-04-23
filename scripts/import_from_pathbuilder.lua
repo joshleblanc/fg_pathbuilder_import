@@ -52,7 +52,9 @@ function onInit()
       pp = Currency.import,
       sp = Currency.import,
       cp = Currency.import,
-      equipment = Equipment.import
+      equipment = Equipment.import,
+      spellCasters = Spell.import,
+      specials = Special.import
     }
 end
 
