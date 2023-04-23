@@ -3,7 +3,7 @@ function fixString(str)
 
   str = GameSystem.removeActionSymbols(str)
   str = str:lower()
-  str = str:gsub("(%w+) %(%w+%)", "%1")
+  str = str:gsub("(.+) %(.+%)", "%1")
   str = StringManager.trim(str)
 
   return str
