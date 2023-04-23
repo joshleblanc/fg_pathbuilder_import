@@ -49,5 +49,6 @@
     <script name="Spell" file="scripts/importers/spell.lua" />
     <script name="Special" file="scripts/importers/special.lua" />
     <script name="Language" file="scripts/importers/language.lua" />
+    <script name="Weapon" file="scripts/importers/weapon.lua" />
   </base>
 </root>
