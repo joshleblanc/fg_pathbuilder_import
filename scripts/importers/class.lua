@@ -1,12 +1,5 @@
 function find_class(value)
-  local classRecords = DB.getChildrenGlobal("reference.classes");
-  for _, classNode in pairs(classRecords) do
-    local sRecordName = StringManager.trim(DB.getValue(classNode, "name", ""));
-
-    if (sRecordName:lower() == value:lower()) then
-      return classNode
-    end
-  end
+  return Finder.getRecordGlobally(value, { "reference.classes" })
 end
 
 function import(node, value)

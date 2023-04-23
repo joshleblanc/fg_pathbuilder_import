@@ -1,13 +1,5 @@
 function findFeat(value)
-  local records = DB.getChildrenGlobal("reference.feats")
-
-  for _, record in pairs(records) do
-    local sRecordName = StringManager.trim(DB.getValue(record, "name", ""))
-
-    if sRecordName:lower() == value:lower() then
-        return record
-    end
-  end
+  return Finder.getFeat(value)
 end
 
 function isFeatDupe(nodeChar, nodeFeat)

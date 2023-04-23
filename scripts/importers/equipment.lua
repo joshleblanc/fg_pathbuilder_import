@@ -1,6 +1,6 @@
 function findItem(name)
   local searchPaths = { "reference.equipment", "reference.weapon", "reference.armor", "reference.magicitems", "item" }
-  return ManagerGetRefData.getRecordGlobally(name:lower(), searchPaths);
+  return Finder.getRecordGlobally(name, searchPaths);
 end
 
 --[[
