@@ -48,5 +48,6 @@
     <script name="Equipment" file="scripts/importers/equipment.lua" />
     <script name="Spell" file="scripts/importers/spell.lua" />
     <script name="Special" file="scripts/importers/special.lua" />
+    <script name="Language" file="scripts/importers/language.lua" />
   </base>
 </root>
