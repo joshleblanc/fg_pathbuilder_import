@@ -47,7 +47,11 @@ function onInit()
       fortitude = Skill.import,
       reflex = Skill.import,
       feats = Feat.import,
-      lores = Lore.import
+      lores = Lore.import,
+      gp = Currency.import,
+      pp = Currency.import,
+      sp = Currency.import,
+      cp = Currency.import
     }
 end
 
