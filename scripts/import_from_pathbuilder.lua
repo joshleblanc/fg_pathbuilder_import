@@ -111,6 +111,23 @@ function doPBImport(pcJson, importWindow)
     data = JSONUtil.parseJson(pcJson)
     local nodeChar = DB.createChild("charsheet");
 
+    --[[
+      As far as I can tell, this _has_ to be a callback.
+      It must run in the middle of the addClass function.
+
+      If we run it manually after adding a class, the PC level is 0 while calculating
+      spell slots. If we run it before, there's no class present in the xml to increment it to 1
+
+      We remove this handler after the import.
+    ]]
+    local onLevelChanged = function()
+      -- we need to start at level 1, or spell slots will be off by 1
+      CharManager.calcLevel(nodeChar);
+      CharManager.recalcProficiencies(nodeChar);
+    end
+
+    DB.addHandler(DB.getPath(nodeChar, "classes"), "onChildUpdate", onLevelChanged);
+
     buildRequiredNodes(nodeChar)
 
     EachKey(function(key, value)
@@ -139,6 +156,8 @@ function doPBImport(pcJson, importWindow)
     DB.setValue(nodeChar, "chargentracker.opened", "number", 1)
 
     running = false
+
+    DB.removeHandler(DB.getPath(nodeChar, "classes"), "onChildUpdate", onLevelChanged)
 
     Interface.dialogMessage(function() 
       -- do nothing

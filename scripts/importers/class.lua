@@ -8,8 +8,7 @@ function import(node, value)
   if not class then return end
 
   CharManager.addInfoDB(node, "referenceclass", class.getNodeName())
-  CharManager.calcLevel(node);
-  CharManager.recalcProficiencies(node);
+
   --DB.setValue(nodeClass, "name", "string", DB.getValue(class, "name", ""));
   --DB.setValue(nodeClass, "shortcut", "windowreference", "referenceclass", class.getNodeName());
 end
