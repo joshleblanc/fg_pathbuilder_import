@@ -1,4 +1,6 @@
 function fixString(str)
+  if not str then return "" end
+
   str = GameSystem.removeActionSymbols(str)
   str = str:lower()
   str = str:gsub("(%w+) %(%w+%)", "%1")
