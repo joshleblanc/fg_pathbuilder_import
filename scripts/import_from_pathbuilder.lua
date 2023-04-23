@@ -85,6 +85,18 @@ function buildRequiredNodes(node)
   node.createChild("saves.will")
 end
 
+function importCharFromFile()
+	Interface.dialogFileOpen(onImportFileSelection, { json = "Pathbuilder JSON" }, nil, false);
+end
+
+function onImportFileSelection(result, vPath)
+	if result ~= "ok" then return; end
+
+    jsonData = File.openTextFile(vPath);
+    doPBImport(jsonData, nil);
+end
+
+
 -- NOTE: rulesets/PFRPG2.pak/campaign/scripts/manager_char.lua has some good stuff in it
 function doPBImport(pcJson, importWindow)
     running = true

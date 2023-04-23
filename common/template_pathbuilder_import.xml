@@ -22,4 +22,13 @@
             <state textres="button_import" />
         </button_text>
     </template>
+    <template name="button_import_from_file_template">
+        <button_text name="button_import_from_file">
+            <anchored to="contentanchor" height="20" width="120">
+                <top parent="bottomanchor" anchor="bottom" offset="5" />
+                <left anchor="center" offset="120" />
+            </anchored>
+            <state textres="button_import_from_file" />
+        </button_text>
+    </template>
 </root>

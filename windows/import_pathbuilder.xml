@@ -48,7 +48,14 @@
 						ImportFromPathbuilder.doPBImport(window.statblock.getValue(), window);
 					end
 				</script>
-			</button_import_window>		
+			</button_import_window>	
+			<button_import_from_file_template name="button_import_from_file">
+				<script>
+					function onButtonPress()
+						ImportFromPathbuilder.importCharFromFile();
+					end
+				</script>
+			</button_import_from_file_template>		
 
 			<resize_utilitybox />
 			<close_utilitybox />
