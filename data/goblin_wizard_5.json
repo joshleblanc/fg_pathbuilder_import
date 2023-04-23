@@ -1,0 +1,329 @@
+{
+  "success": true,
+  "build": {
+    "name": "Test Wizard",
+    "class": "Wizard",
+    "level": 5,
+    "ancestry": "Goblin",
+    "heritage": "Charhide Goblin",
+    "background": "Scholar (Arcana)",
+    "alignment": "LG",
+    "gender": "Not set",
+    "age": "Not set",
+    "deity": "Not set",
+    "size": 1,
+    "keyability": "int",
+    "languages": [
+      "Common",
+      "Elven",
+      "Gnomish",
+      "Goblin",
+      "Orcish",
+      "Undercommon"
+    ],
+    "attributes": {
+      "ancestryhp": 6,
+      "classhp": 6,
+      "bonushp": 0,
+      "bonushpPerLevel": 0,
+      "speed": 25,
+      "speedBonus": 0
+    },
+    "abilities": {
+      "str": 10,
+      "dex": 12,
+      "con": 14,
+      "int": 19,
+      "wis": 14,
+      "cha": 16
+    },
+    "proficiencies": {
+      "classDC": 2,
+      "perception": 2,
+      "fortitude": 2,
+      "reflex": 4,
+      "will": 4,
+      "heavy": 0,
+      "medium": 0,
+      "light": 0,
+      "unarmored": 2,
+      "advanced": 0,
+      "martial": 0,
+      "simple": 0,
+      "unarmed": 2,
+      "castingArcane": 2,
+      "castingDivine": 0,
+      "castingOccult": 0,
+      "castingPrimal": 0,
+      "acrobatics": 0,
+      "arcana": 4,
+      "athletics": 0,
+      "crafting": 0,
+      "deception": 2,
+      "diplomacy": 4,
+      "intimidation": 2,
+      "medicine": 2,
+      "nature": 2,
+      "occultism": 2,
+      "performance": 0,
+      "religion": 2,
+      "society": 2,
+      "stealth": 0,
+      "survival": 0,
+      "thievery": 0
+    },
+    "feats": [
+      [
+        "Assurance",
+        "Arcana"
+      ],
+      [
+        "Reach Spell",
+        null,
+        "Wizard Feat",
+        1
+      ],
+      [
+        "Burn It!",
+        null,
+        "Ancestry Feat",
+        1
+      ],
+      [
+        "Charhide Goblin",
+        null,
+        "Heritage",
+        1
+      ],
+      [
+        "Additional Lore",
+        null,
+        "Skill Feat",
+        2
+      ],
+      [
+        "Counterspell",
+        null,
+        "Class Feat",
+        2
+      ],
+      [
+        "Unmistakable Lore",
+        null,
+        "General Feat",
+        3
+      ],
+      [
+        "Skill Training",
+        "Intimidation",
+        "Skill Feat",
+        4
+      ],
+      [
+        "Bespell Weapon",
+        null,
+        "Class Feat",
+        4
+      ],
+      [
+        "Widen Spell",
+        null,
+        "Wizard Feat",
+        4
+      ],
+      [
+        "Goblin Song",
+        null,
+        "Ancestry Feat",
+        5
+      ]
+    ],
+    "specials": [
+      "Arcane School: Evocation",
+      "Arcane Thesis: Metamagical Experimentation",
+      "Spellbook",
+      "Drain Bonded Item",
+      "Arcane Bond",
+      "Darkvision",
+      "Lightning Reflexes",
+      "Charhide Goblin"
+    ],
+    "lores": [
+      [
+        "Academia",
+        2
+      ],
+      [
+        "Test Lore",
+        4
+      ]
+    ],
+    "equipment": [
+      [
+        "Backpack",
+        1
+      ],
+      [
+        "Bedroll",
+        1
+      ],
+      [
+        "Chalk",
+        10
+      ],
+      [
+        "Flint and Steel",
+        1
+      ],
+      [
+        "Rope",
+        1
+      ],
+      [
+        "Rations",
+        2
+      ],
+      [
+        "Torch",
+        5
+      ],
+      [
+        "Waterskin",
+        1
+      ],
+      [
+        "Soap",
+        1
+      ],
+      [
+        "Material Component Pouch",
+        1
+      ],
+      [
+        "Writing Set",
+        1
+      ],
+      [
+        "Spellbook (Blank)",
+        1
+      ]
+    ],
+    "specificProficiencies": {
+      "trained": [
+        "Staff"
+      ],
+      "expert": [],
+      "master": [],
+      "legendary": []
+    },
+    "weapons": [
+      {
+        "name": "Staff",
+        "qty": 1,
+        "prof": "simple",
+        "die": "d4",
+        "pot": 0,
+        "str": "",
+        "mat": null,
+        "display": "Staff",
+        "runes": []
+      }
+    ],
+    "money": {
+      "pp": 0,
+      "gp": 12,
+      "sp": 0,
+      "cp": 0
+    },
+    "armor": [],
+    "focus": {
+      "focusPoints": 1,
+      "arcane": {
+        "int": {
+          "abilityBonus": 4,
+          "proficiency": 2,
+          "itemBonus": 0,
+          "focusSpells": [
+            "Force Bolt"
+          ]
+        }
+      }
+    },
+    "spellCasters": [
+      {
+        "name": "Wizard",
+        "magicTradition": "arcane",
+        "spellcastingType": "prepared",
+        "ability": "int",
+        "proficiency": 2,
+        "focusPoints": 0,
+        "spells": [
+          {
+            "spellLevel": 0,
+            "list": [
+              "Acid Splash",
+              "Chill Touch",
+              "Produce Flame",
+              "Ray of Frost",
+              "Shield",
+              "Electric Arc",
+              "Detect Magic",
+              "Daze",
+              "Mage Hand",
+              "Sigil"
+            ]
+          },
+          {
+            "spellLevel": 1,
+            "list": [
+              "Goblin Pox",
+              "Burning Hands",
+              "Mage Armor",
+              "Magic Missile",
+              "Shocking Grasp"
+            ]
+          },
+          {
+            "spellLevel": 2,
+            "list": [
+              "Flaming Sphere",
+              "Continual Flame",
+              "Dispel Magic",
+              "Acid Arrow"
+            ]
+          },
+          {
+            "spellLevel": 3,
+            "list": [
+              "Lightning Bolt",
+              "Fireball",
+              "Wall of Wind",
+              "Invisibility Sphere"
+            ]
+          }
+        ],
+        "perDay": [
+          6,
+          4,
+          4,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "formula": [],
+    "pets": [],
+    "acTotal": {
+      "acProfBonus": 7,
+      "acAbilityBonus": 1,
+      "acItemBonus": 0,
+      "acTotal": 18
+    }
+  }
+}
