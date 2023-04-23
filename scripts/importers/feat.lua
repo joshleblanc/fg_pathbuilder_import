@@ -32,7 +32,7 @@ function import(node, value)
 
   if not feat then return end 
 
-  if not isFeatDupe(node, feat) then return end
+  if isFeatDupe(node, feat) then return end
 
   CharManager.addInfoDB(node, "referencefeat", feat.getNodeName())
 end
