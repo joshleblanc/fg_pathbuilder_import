@@ -51,7 +51,8 @@ function onInit()
       gp = Currency.import,
       pp = Currency.import,
       sp = Currency.import,
-      cp = Currency.import
+      cp = Currency.import,
+      equipment = Equipment.import
     }
 end
 

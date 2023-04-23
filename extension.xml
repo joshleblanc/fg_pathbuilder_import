@@ -43,5 +43,6 @@
     <script name="Feat" file="scripts/importers/feat.lua" />
     <script name="Lore" file="scripts/importers/lore.lua" />
     <script name="Currency" file="scripts/importers/currency.lua" />
+    <script name="Equipment" file="scripts/importers/equipment.lua" />
   </base>
 </root>
