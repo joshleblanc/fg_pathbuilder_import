@@ -46,7 +46,8 @@ function onInit()
       perception = Skill.import,
       fortitude = Skill.import,
       reflex = Skill.import,
-      feats = Feat.import
+      feats = Feat.import,
+      lores = Lore.import
     }
 end
 
@@ -106,7 +107,6 @@ function doPBImport(pcJson, importWindow)
         else 
           DBMap[key](nodeChar, value, key)
         end
-        
       else
         -- Debug.print("No mapping found for: " .. key)
       end
