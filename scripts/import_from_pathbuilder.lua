@@ -58,7 +58,11 @@ function onInit()
       languages = Language.import,
       weapons = Weapon.import,
       armor = Weapon.import,
-      focusSpells = FocusSpell.import
+      focusSpells = FocusSpell.import,
+      trained = Proficiency.import,
+      expert = Proficiency.import,
+      master = Proficiency.import,
+      legendary = Proficiency.import
     }
 end
 

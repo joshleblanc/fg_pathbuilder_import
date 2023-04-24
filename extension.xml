@@ -51,6 +51,6 @@
     <script name="Language" file="scripts/importers/language.lua" />
     <script name="Weapon" file="scripts/importers/weapon.lua" />
     <script name="FocusSpell" file="scripts/importers/focus_spell.lua" />
-
+    <script name="Proficiency" file="scripts/importers/proficiency.lua" />
   </base>
 </root>
