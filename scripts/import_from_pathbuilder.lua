@@ -57,7 +57,8 @@ function onInit()
       specials = Special.import,
       languages = Language.import,
       weapons = Weapon.import,
-      armor = Weapon.import
+      armor = Weapon.import,
+      focusSpells = FocusSpell.import
     }
 end
 
