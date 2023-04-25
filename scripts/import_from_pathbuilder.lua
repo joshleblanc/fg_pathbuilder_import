@@ -3,7 +3,21 @@ local data = {}
 local DBMap = {}
 
 function importFromPathbuilder(sCommand, sParams)
-    Interface.openWindow("import_pathbuilder", "")
+    Interface.openWindow("import_window", "")
+end
+
+function addError(key, value)
+  local node = DB.createNode("pb_import_errors")
+  local a = node.createChild()
+  local b = a.createChild("name", "string")
+  b.setValue(key)
+  local c= a.createChild("error", "string")
+  c.setValue(value)
+
+end
+
+function registerErrors(node)
+  DB.deleteChildren(node)
 end
 
 function onInit()
@@ -138,6 +152,15 @@ function doPBImport(pcJson, importWindow)
 
     buildRequiredNodes(nodeChar)
 
+    function call(key, el)
+      local msg = DBMap[key](nodeChar, el, key)
+      if msg then 
+        Debug.chat("error: " .. key .. ": " .. msg)
+        addError(key, msg)
+      end
+    end
+
+
     EachKey(function(key, value)
       if DBMap[key] then
         -- Debug.print("Importing: " .. key)
@@ -145,11 +168,11 @@ function doPBImport(pcJson, importWindow)
         -- if the value is an array, run the import on each element
         if type(value) == "table" then
           for _, el in ipairs(value) do
-            DBMap[key](nodeChar, el, key)
+            call(key, el)
           end
         -- otherwise just pass the value
         else 
-          DBMap[key](nodeChar, value, key)
+          call(key, value)
         end
       else
         -- Debug.print("No mapping found for: " .. key)

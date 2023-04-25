@@ -5,7 +5,9 @@ end
 function import(node, value)
   local class = find_class(value)
 
-  if not class then return end
+  if not class then 
+    return value .. " not found" 
+  end
 
   CharManager.addInfoDB(node, "referenceclass", class.getNodeName())
 

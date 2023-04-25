@@ -9,4 +9,8 @@ function import(node, value, key)
   if armor then
     CharManager.addDefenseProficiency(node, DB.getValue(armor, "name", ""), "", key)
   end
+
+  if not weapon and not armor then
+    return value .. " not found"
+  end
 end

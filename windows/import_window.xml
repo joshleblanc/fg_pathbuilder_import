@@ -1,0 +1,118 @@
+<root>
+  <windowclass name="import_window">
+    <frame>utilitybox</frame>
+    <placement>
+      <size height="600" width="1000" />
+    </placement>
+    <sheetdata>
+      <close>
+        <anchored>
+          <top offset="0" />
+          <right offset="-8" />
+        </anchored>
+      </close>
+      <windowlist name="errors">
+        <script>
+          function onInit()
+            ImportFromPathbuilder.registerErrors(getDatabaseNode())
+          end
+        </script>
+        <frame>
+          <name>groupbox</name>
+          <offset>5,5,5,5</offset>
+        </frame>
+        <bounds>546,93,434,449</bounds>
+        <readonly />
+        <class>error_item</class>
+        <datasource>.pb_import_errors</datasource>
+        <sortby>
+          <field>name</field>
+        </sortby>
+      </windowlist>
+      <formattedtextfield name="statblock">
+        <frame>
+          <name>fielddark</name>
+          <offset>8,8,8,8</offset>
+        </frame>
+        <empty>
+          <textres>ft_empty_import_pc</textres>
+        </empty>
+        <bounds>41,59,489,479</bounds>
+      </formattedtextfield>
+      <stringcontrol name="Label1">
+        <frame>
+          <name>windowtitle</name>
+        </frame>
+        <bounds>554,53,412,40</bounds>
+        <center />
+        <static textres="error_list_title" />
+        <font>windowtitle</font>
+        <readonly />
+      </stringcontrol>
+      <stringcontrol name="Label2">
+        <frame>
+          <name>windowtitle</name>
+        </frame>
+        <bounds>321,1,379,41</bounds>
+        <center />
+        <static textres="import_window_title" />
+        <font>windowtitle</font>
+        <readonly />
+      </stringcontrol>
+      <buttoncontrol name="Button1">
+        <frame>
+          <name>buttonup</name>
+        </frame>
+        <bounds>35,555,196,24</bounds>
+        <textres>import_window_import_json</textres>
+        <stateframe>
+          <pressed name="buttonup" offset="-1,-1,-1,-1" nobaseframe="true" />
+        </stateframe>
+        <font>button-white</font>
+        <script>
+          function onButtonPress()
+            ImportFromPathbuilder.doPBImport(window.statblock.getValue(), window);
+          end
+        </script>
+      </buttoncontrol>
+      <buttoncontrol name="Button2">
+        <frame>
+          <name>buttonup</name>
+        </frame>
+        <bounds>302,555,200,24</bounds>
+        <textres>import_window_Button2_ButtonCaption</textres>
+        <stateframe>
+          <pressed name="buttonup" offset="-1,-1,-1,-1" nobaseframe="true" />
+        </stateframe>
+        <font>button-white</font>
+        <script>
+          function onButtonPress()
+            ImportFromPathbuilder.importCharFromFile();
+          end
+        </script>
+      </buttoncontrol>
+      <scrollbarcontrol name="ScrollBar1">
+        <frame>
+          <name>scrollbar_base</name>
+          <offset>0,12,0,12</offset>
+        </frame>
+        <bounds>510,71,20,455</bounds>
+        <normal name="scrollbutton_normal">
+          <minimum height="scrollbutton_normal" />
+        </normal>
+        <target>startblock</target>
+      </scrollbarcontrol>
+      <scrollbarcontrol name="ScrollBar2">
+        <frame>
+          <name>scrollbar_base</name>
+          <offset>0,12,0,12</offset>
+        </frame>
+        <bounds>947,121,20,396</bounds>
+        <normal name="scrollbutton_normal">
+          <minimum height="scrollbutton_normal" />
+        </normal>
+        <target>errors</target>
+      </scrollbarcontrol>
+    </sheetdata>
+  </windowclass>
+</root>

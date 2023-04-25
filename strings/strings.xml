@@ -1,7 +1,9 @@
 <root>
 	<!-- Import -->
-	<string name="import_pc_title">Import - PC From Pathbuilder</string>
-	
+	<string name="import_window_title">Import - PC From Pathbuilder</string>
+  <string name="error_list_title">Errors</string>
+
+  <string name="import_window_import_json">Import from JSON</string>
 	<string name="ft_empty_import_pc">Paste the Pathbuilder JSON here</string>
-	<string name="button_import_from_file">Import from File</string>
+	<string name="import_window_Button2_ButtonCaption">Import from File</string>
 </root>

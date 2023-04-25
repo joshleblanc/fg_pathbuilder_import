@@ -5,7 +5,9 @@ end
 function import(node, value)
   local background = findBackground(value)
 
-  if not background then return end
+  if not background then 
+    return value .. " not found"
+  end
 
   CharManager.addInfoDB(node, "reference_background", background.getNodeName())
 end

@@ -7,7 +7,9 @@ function import(node, value)
 
   local deity = findDeity(value)
 
-  if not deity then return end 
+  if not deity then 
+    return value .. " not found"
+  end 
 
   CharManager.addInfoDB(node, "reference_lookupdata", deity.getNodeName())
 end

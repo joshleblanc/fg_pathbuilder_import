@@ -13,5 +13,7 @@
       }
 ]]
 function import(node, value)
-  Equipment.import(node, { value.display, value.qty })
+  if Equipment.import(node, { value.display, value.qty }) then 
+    return Equipment.import(node, { value.name, value.qty })
+  end
 end

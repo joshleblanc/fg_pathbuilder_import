@@ -20,9 +20,8 @@
   <base>
 
     <!-- Windows -->
-    <includefile source="common/template_pathbuilder_import.xml" />
-    <includefile source="windows/import_pathbuilder.xml" />
-
+    <includefile source="windows/import_window.xml" />
+    <includefile source="windows/error_item.xml" />
 
     <includefile source="strings/strings.xml" />
 

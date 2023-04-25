@@ -27,9 +27,13 @@ end
 function import(node, value)
   local feat = findFeat(value[1])
 
-  if not feat then return end 
+  if not feat then 
+    return value[1] .. " not found"
+  end 
 
-  if isFeatDupe(node, feat) then return end
+  if isFeatDupe(node, feat) then 
+    return value[1] .. " already exists"
+  end
 
   CharManager.addInfoDB(node, "referencefeat", feat.getNodeName())
 end
