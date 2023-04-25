@@ -4,7 +4,7 @@ function import(node, value, key)
   local skill = CharManager.getSkillNode(node, key)
 
   if not skill then 
-    return key .. "not found"
+    return key .. " not found"
   end
   if value == 2 then
     CharManager.setProficiency(skill, "trained")
