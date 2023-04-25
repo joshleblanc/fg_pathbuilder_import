@@ -12,7 +12,10 @@ end
 function getLookupDataRecordGlobally(sRecordName, sLookupDataType)
 	local aDataMap = { "lookupdata", "reference.lookupdata" }
 
-  sLookupDataType = fixString(sLookupDataType)
+  if sLookupDataType then 
+    sLookupDataType = fixString(sLookupDataType)
+  end
+  
   sRecordName = fixString(sRecordName)
 
 	for _, topLevelNodeName in pairs(aDataMap) do
@@ -21,7 +24,7 @@ function getLookupDataRecordGlobally(sRecordName, sLookupDataType)
 		for _, recordNode in pairs(recordNodes) do
       local recordCheckType = fixString(DB.getValue(recordNode, "lookupdatatype", ""))
 
-			if recordCheckType == sLookupDataType then
+			if not sLookupDataType or recordCheckType == sLookupDataType then
 				local recordCheckName = fixString(DB.getValue(recordNode, "name", ""))
 
 				if recordCheckName == sRecordName then
@@ -80,7 +83,7 @@ function getFeat(sFeatName, sTrait)
     local featCheckTraits = fixString(DB.getValue(featNode, "traits", ""))
 
     if featCheckName == sFeatName and string.find(featCheckTraits, sTrait) then
-      return featNode
+       return featNode
     end
   end
 end
