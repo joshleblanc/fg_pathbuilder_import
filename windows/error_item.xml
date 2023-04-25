@@ -14,11 +14,11 @@
     <margins control="2,2,2,2" />
     <sheetdata>
       <stringfield name="error">
-        <bounds>150,8,139,17</bounds>
+        <bounds>200,8,200,17</bounds>
         <disabled />
       </stringfield>
       <stringfield name="name">
-        <bounds>11,8,135,15</bounds>
+        <bounds>11,8,200,15</bounds>
         <disabled />
       </stringfield>
     </sheetdata>
