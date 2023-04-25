@@ -1,7 +1,12 @@
 function import(node, value)
-  local adj = value:match("%w+: (.+)")
+  local adj = value:match(".+: (.+)")
+  if not adj then
+    adj = value
+  end
 
-  local record = Finder.getLookupDataRecordGlobally(adj, "class")
+  Debug.chat("Importing special " .. adj)
+
+  local record = Finder.getLookupDataRecordGlobally(adj)
 
   if not record then
     return value .. " not found"
