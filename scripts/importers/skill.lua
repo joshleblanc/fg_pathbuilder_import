@@ -7,7 +7,7 @@ local saves = {
 -- CharManager.trainSkill(node, skillName)
 function import(node, value, key)
   -- saves aren't skills 🙄
-  if StringManager.contains(saves, value) then 
+  if StringManager.contains(saves, key) then
     return
   end
 
