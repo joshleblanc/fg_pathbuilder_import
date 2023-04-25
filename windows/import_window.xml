@@ -21,7 +21,7 @@
           <name>groupbox</name>
           <offset>5,5,5,5</offset>
         </frame>
-        <bounds>546,93,434,449</bounds>
+        <bounds>546,135,434,449</bounds>
         <readonly />
         <class>error_item</class>
         <datasource>.pb_import_errors</datasource>
@@ -96,7 +96,7 @@
           <name>scrollbar_base</name>
           <offset>0,12,0,12</offset>
         </frame>
-        <bounds>510,71,20,455</bounds>
+        <bounds>510,160,20,455</bounds>
         <normal name="scrollbutton_normal">
           <minimum height="scrollbutton_normal" />
         </normal>
@@ -113,6 +113,11 @@
         </normal>
         <target>errors</target>
       </scrollbarcontrol>
+      <stringcontrol name="Label3">
+        <bounds>553,115,410,20</bounds>
+        <static textres="error_notes" />
+        <readonly />
+      </stringcontrol>
     </sheetdata>
   </windowclass>
 </root>
