@@ -10,6 +10,10 @@ function import(node, value)
     return value .. " not found"
   end
 
+  if CharManager.handleDuplicateFeatures2(node, record) then
+    return value .. " already exists"
+  end
+
   CharManager.addInfoDB(node, "referenceclassability", record.getNodeName())
 
   return value .. " imported as " .. DB.getValue(record, "name", "")
