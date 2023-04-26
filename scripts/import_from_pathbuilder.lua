@@ -13,7 +13,6 @@ function addError(key, value)
   b.setValue(key)
   local c= a.createChild("error", "string")
   c.setValue(value)
-
 end
 
 function registerErrors(node)
@@ -115,20 +114,24 @@ function buildRequiredNodes(node)
   node.createChild("saves.will")
 end
 
-function importCharFromFile()
-	Interface.dialogFileOpen(onImportFileSelection, { json = "Pathbuilder JSON" }, nil, false);
+function importCharFromFile(window)
+	Interface.dialogFileOpen(function(result, vPath)
+    onImportFileSelection(result, vPath, window)
+  end, { json = "Pathbuilder JSON" }, nil, false);
 end
 
-function onImportFileSelection(result, vPath)
+function onImportFileSelection(result, vPath, window)
 	if result ~= "ok" then return; end
 
     jsonData = File.openTextFile(vPath);
-    doPBImport(jsonData, nil);
+    doPBImport(jsonData, window);
 end
 
 
 -- NOTE: rulesets/PFRPG2.pak/campaign/scripts/manager_char.lua has some good stuff in it
 function doPBImport(pcJson, importWindow)
+    DB.deleteChildren(importWindow.errors.getDatabaseNode())
+    
     running = true
     data = JSONUtil.parseJson(pcJson)
     local nodeChar = DB.createChild("charsheet");

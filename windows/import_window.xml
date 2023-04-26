@@ -87,7 +87,7 @@
         <font>button-white</font>
         <script>
           function onButtonPress()
-            ImportFromPathbuilder.importCharFromFile();
+            ImportFromPathbuilder.importCharFromFile(window);
           end
         </script>
       </buttoncontrol>
