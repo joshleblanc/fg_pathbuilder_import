@@ -10,4 +10,6 @@ function import(node, value)
   end 
 
   CharManager.addInfoDB(node, "reference_lookupdata", heritage.getNodeName())
+
+  return value .. " imported as " .. DB.getValue(heritage, "name", "")
 end

@@ -18,4 +18,6 @@ function import(node, value)
   end
 
   ItemManager.addItemToList(inventoryList, "item", item, false, value[2])
+
+  return value[1] .. " imported as " .. DB.getValue(item, "name", "")
 end

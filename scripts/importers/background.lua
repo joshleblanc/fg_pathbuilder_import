@@ -10,4 +10,6 @@ function import(node, value)
   end
 
   CharManager.addInfoDB(node, "reference_background", background.getNodeName())
+
+  return value .. " imported as " .. DB.getValue(background, "name", "")
 end

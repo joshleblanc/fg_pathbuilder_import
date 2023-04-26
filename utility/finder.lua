@@ -9,6 +9,15 @@ function fixString(str)
   return str
 end
 
+function compare(a, b)
+  if Fzy.has_match(a, b) then 
+    Debug.chat(a .. " : " .. b .. " : " .. Fzy.score(a,b))
+    return Fzy.score(a, b) > 5
+  end
+
+  return false
+end
+
 function getLookupDataRecordGlobally(sRecordName, sLookupDataType)
 	local aDataMap = { "lookupdata", "reference.lookupdata" }
 
@@ -44,7 +53,7 @@ function getRecordGlobally(sRecordName, aDataMap)
 		for _, recordNode in pairs(recordNodes) do
 			local recordCheckName = fixString(DB.getValue(recordNode, "name", ""))
 
-			if recordCheckName == sRecordName then
+			if compare(sRecordName, recordCheckName) then
         return recordNode
 			end
 		end

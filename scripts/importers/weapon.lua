@@ -13,7 +13,10 @@
       }
 ]]
 function import(node, value)
-  if Equipment.import(node, { value.display, value.qty }) then 
+  local displayTry = Equipment.import(node, { value.display, value.qty })
+  if StringManager.endsWith(displayTry,  "not found") then 
     return Equipment.import(node, { value.name, value.qty })
   end
+
+  return displayTry
 end

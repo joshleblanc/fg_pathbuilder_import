@@ -12,4 +12,6 @@ function import(node, value)
   end 
 
   CharManager.addInfoDB(node, "reference_lookupdata", deity.getNodeName())
+
+  return value .. " imported as " .. DB.getValue(deity, "name", "")
 end

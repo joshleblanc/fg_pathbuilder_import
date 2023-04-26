@@ -36,4 +36,6 @@ function import(node, value)
   end
 
   CharManager.addInfoDB(node, "referencefeat", feat.getNodeName())
+
+  return value[1] .. " imported as " .. DB.getValue(feat, "name", "")
 end

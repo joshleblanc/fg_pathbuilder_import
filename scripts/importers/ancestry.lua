@@ -10,4 +10,6 @@ function import(node, value)
   end
 
   CharManager.addInfoDB(node, "referencerace", race.getNodeName())
+
+  return value .. " imported as " .. DB.getValue(race, "name", "")
 end

@@ -1,3 +1,3 @@
 function import(node, value)
-  DB.setValue(node, "name", "string", value);
+  DB.setValue(node, "name", "string", value)
 end

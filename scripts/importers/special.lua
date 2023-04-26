@@ -13,4 +13,6 @@ function import(node, value)
   end
 
   CharManager.addInfoDB(node, "referenceclassability", record.getNodeName())
+
+  return value .. " imported as " .. DB.getValue(record, "name", "")
 end

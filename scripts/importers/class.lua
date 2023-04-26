@@ -11,6 +11,8 @@ function import(node, value)
 
   CharManager.addInfoDB(node, "referenceclass", class.getNodeName())
 
+  return value .. " imported as " .. DB.getValue(class, "name", "")
+
   --DB.setValue(nodeClass, "name", "string", DB.getValue(class, "name", ""));
   --DB.setValue(nodeClass, "shortcut", "windowreference", "referenceclass", class.getNodeName());
 end
