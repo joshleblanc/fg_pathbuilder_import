@@ -11,7 +11,6 @@ end
 
 function compare(a, b)
   if Fzy.has_match(a, b) then 
-    Debug.chat(a .. " : " .. b .. " : " .. Fzy.score(a,b))
     return Fzy.score(a, b) > 5
   end
 

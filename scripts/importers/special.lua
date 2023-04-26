@@ -4,8 +4,6 @@ function import(node, value)
     adj = value
   end
 
-  Debug.chat("Importing special " .. adj)
-
   local record = Finder.getLookupDataRecordGlobally(adj)
 
   if not record then

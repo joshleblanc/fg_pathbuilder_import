@@ -6,5 +6,8 @@
 
   <string name="import_window_import_json">Import from JSON</string>
 	<string name="ft_empty_import_pc">Paste the Pathbuilder JSON here</string>
-	<string name="import_window_Button2_ButtonCaption">Import from File</string>
+	<string name="import_from_file">Import from File</string>
+	<string name="cb_label">Update existing?</string>
+  <string name="update_info">Updating a character will not import inventory or wealth</string>
+
 </root>

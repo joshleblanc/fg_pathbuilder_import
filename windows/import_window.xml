@@ -37,7 +37,7 @@
         <empty>
           <textres>ft_empty_import_pc</textres>
         </empty>
-        <bounds>41,59,489,479</bounds>
+        <bounds>41,101,489,437</bounds>
       </formattedtextfield>
       <stringcontrol name="Label1">
         <frame>
@@ -80,7 +80,7 @@
           <name>buttonup</name>
         </frame>
         <bounds>302,555,200,24</bounds>
-        <textres>import_window_Button2_ButtonCaption</textres>
+        <textres>import_from_file</textres>
         <stateframe>
           <pressed name="buttonup" offset="-1,-1,-1,-1" nobaseframe="true" />
         </stateframe>
@@ -94,6 +94,22 @@
       <stringcontrol name="Label3">
         <bounds>553,115,410,20</bounds>
         <static textres="error_notes" />
+        <readonly />
+      </stringcontrol>
+      <buttonfield name="overwrite">
+        <bounds>39,50,20,20</bounds>
+        <default>1</default>
+        <state icon="button_checkoff" />
+        <state icon="button_checkon" />
+      </buttonfield>
+      <stringcontrol name="Label4">
+        <bounds>63,50,221,20</bounds>
+        <static textres="cb_label" />
+        <readonly />
+      </stringcontrol>
+      <stringcontrol name="Label5">
+        <bounds>41,74,401,20</bounds>
+        <static textres="update_info" />
         <readonly />
       </stringcontrol>
     </sheetdata>

@@ -127,14 +127,42 @@ function onImportFileSelection(result, vPath, window)
     doPBImport(jsonData, window);
 end
 
+function findChar(name)
+  local chars = DB.getChildren("charsheet")
+  for _, char in pairs(chars) do
+    if DB.getValue(char, "name", "") == name then
+      return char
+    end
+  end
+end
+
+local updateExclusions = {
+  "class", "inventory", "gp", "sp", "pp", "cp", "ancestry", "heritage"
+}
 
 -- NOTE: rulesets/PFRPG2.pak/campaign/scripts/manager_char.lua has some good stuff in it
 function doPBImport(pcJson, importWindow)
     DB.deleteChildren(importWindow.errors.getDatabaseNode())
+
+    local updateExisting = importWindow.overwrite.getValue() == 1
     
     running = true
     data = JSONUtil.parseJson(pcJson)
-    local nodeChar = DB.createChild("charsheet");
+
+    local nodeChar
+    if updateExisting then 
+      nodeChar = findChar(data.build.name)
+    end
+    
+    if not nodeChar then 
+      nodeChar = DB.createChild("charsheet")
+      updateExisting = false
+    end
+
+    if not nodeChar then
+      Debug.chat("couldn't find char")
+      return
+    end
 
     --[[
       As far as I can tell, this _has_ to be a callback.
@@ -158,7 +186,6 @@ function doPBImport(pcJson, importWindow)
     function call(key, el)
       local msg = DBMap[key](nodeChar, el, key)
       if msg then 
-        Debug.chat("error: " .. key .. ": " .. msg)
         addError(key, msg)
       end
     end
