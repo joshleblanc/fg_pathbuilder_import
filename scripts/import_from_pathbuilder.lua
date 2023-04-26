@@ -1,6 +1,20 @@
 
 local data = {}
 local DBMap = {}
+local windowsOpen = {}
+local running = false
+local updateExclusions = {
+  "class", 
+  "inventory", 
+  "gp", "sp", "pp", "cp", 
+  "ancestry", 
+  "heritage",
+  "name",
+  "background",
+  "equipment",
+  "weapons",
+  "armor"
+}
 
 function importFromPathbuilder(sCommand, sParams)
     Interface.openWindow("import_window", "")
@@ -95,9 +109,6 @@ function EachKey(fn, root)
   return nil
 end
 
-local windowsOpen = {}
-local running = false
-
 function onWindowOpened(window)
   if running then 
     table.insert(windowsOpen, window)
@@ -135,10 +146,6 @@ function findChar(name)
     end
   end
 end
-
-local updateExclusions = {
-  "class", "inventory", "gp", "sp", "pp", "cp", "ancestry", "heritage"
-}
 
 -- NOTE: rulesets/PFRPG2.pak/campaign/scripts/manager_char.lua has some good stuff in it
 function doPBImport(pcJson, importWindow)
@@ -184,6 +191,11 @@ function doPBImport(pcJson, importWindow)
     buildRequiredNodes(nodeChar)
 
     function call(key, el)
+      
+      if updateExisting and StringManager.contains(updateExclusions, key) then 
+        return
+      end
+
       local msg = DBMap[key](nodeChar, el, key)
       if msg then 
         addError(key, msg)
