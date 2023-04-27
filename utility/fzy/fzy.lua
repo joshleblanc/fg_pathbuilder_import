@@ -30,6 +30,10 @@ function score(...)
   return fzy.score(...)
 end
 
+function filter(...)
+  return fzy.filter(...)
+end
+
 -- Check if `needle` is a subsequence of the `haystack`.
 --
 -- Usually called before `score` or `positions`.

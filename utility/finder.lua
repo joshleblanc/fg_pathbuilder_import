@@ -9,89 +9,91 @@ function fixString(str)
   return str
 end
 
+function find(sRecordName, aDataMap, fn)
+  local names = {}
+  local nodeMap = {}
+  sRecordName = fixString(sRecordName)
+
+	for _, topLevelNodeName in pairs(aDataMap) do
+		local recordNodes = DB.getChildrenGlobal(topLevelNodeName)
+    for _, recordNode in pairs(recordNodes) do
+      if not fn or fn(recordNode) then 
+        local recordCheckName = fixString(DB.getValue(recordNode, "name", ""))       
+
+        table.insert(names, recordCheckName)
+        nodeMap[recordCheckName] = recordNode
+      end
+    end
+  end
+
+  local results = Fzy.filter(sRecordName, names)
+  table.sort(results, function(a,b) 
+    return a[3] > b[3]
+  end)
+
+  local winner = results[1]
+
+  if winner then
+    local name = names[winner[1]]
+
+    return nodeMap[name]
+  else
+    return nil
+  end
+end
+
 function compare(a, b)
   if Fzy.has_match(a, b) then 
-    return Fzy.score(a, b) > 5
+    return Fzy.score(a, b) > 7
   end
 
   return false
 end
 
-function getLookupDataRecordGlobally(sRecordName, sLookupDataType)
+function getLookupDataRecordGlobally(sRecordName, sLookupDataType, fn)
 	local aDataMap = { "lookupdata", "reference.lookupdata" }
 
   if sLookupDataType then 
     sLookupDataType = fixString(sLookupDataType)
   end
-  
-  sRecordName = fixString(sRecordName)
 
-	for _, topLevelNodeName in pairs(aDataMap) do
-		local recordNodes = DB.getChildrenGlobal(topLevelNodeName)
+  return find(sRecordName, aDataMap, function(node)
+    local recordCheckType = fixString(DB.getValue(node, "lookupdatatype", ""))
 
-		for _, recordNode in pairs(recordNodes) do
-      local recordCheckType = fixString(DB.getValue(recordNode, "lookupdatatype", ""))
+    if fn and not fn(node) then return false end
 
-			if not sLookupDataType or recordCheckType == sLookupDataType then
-				local recordCheckName = fixString(DB.getValue(recordNode, "name", ""))
+    if not sLookupDataType or recordCheckType == sLookupDataType then
+      return true
+    end
 
-				if recordCheckName == sRecordName then
-					return recordNode
-				end
-			end
-		end
-	end
+    return false
+  end)
 end
 
-function getRecordGlobally(sRecordName, aDataMap)
+function getRecordGlobally(sRecordName, aDataMap, fn)
 	sRecordName = fixString(sRecordName)
 
-	for _, topLevelNodeName in pairs(aDataMap) do
-		local recordNodes = DB.getChildrenGlobal(topLevelNodeName)
-
-		for _, recordNode in pairs(recordNodes) do
-			local recordCheckName = fixString(DB.getValue(recordNode, "name", ""))
-
-			if compare(sRecordName, recordCheckName) then
-        return recordNode
-			end
-		end
-	end
+  return find(sRecordName, aDataMap, fn)
 end
 
-function getFeat(sFeatName, sTrait)
+function getFeat(sFeatName, sTrait, fn)
 	if not sFeatName or sFeatName == "" then return end
 
 	if not sTrait then
 		sTrait = "";
 	end
 
-  sFeatName = fixString(sFeatName)
   sTrait = fixString(sTrait)
 
-	local featNodes = DB.getChildrenGlobal("feat")
+  return find(sFeatName, { "feat", "reference.feats" }, function(node)
+    local featCheckTraits = fixString(DB.getValue(node, "traits", ""))
 
-  if not featNodes then return end
+    if fn and not fn(node) then return false end
 
-  for _, featNode in pairs(featNodes) do
-    local featCheckName = fixString(DB.getValue(featNode, "name", ""))
-    local featCheckTraits = fixString(DB.getValue(featNode, "traits", ""))
-
-    if featCheckName == sFeatName and string.find(featCheckTraits, sTrait) then
-      return featNode
+    if string.find(featCheckTraits, sTrait) then
+      return true
     end
-  end
 
-  local featReferenceNodes = DB.getChildrenGlobal("reference.feats")
-
-  if not featReferenceNodes then return end
-
-  for _,featNode in pairs(featReferenceNodes) do
-    local featCheckName = fixString(DB.getValue(featNode, "name", ""))
-    local featCheckTraits = fixString(DB.getValue(featNode, "traits", ""))
-
-    if featCheckName == sFeatName and string.find(featCheckTraits, sTrait) then
-       return featNode
-    end
-  end
+    return false
+  end)
 end
