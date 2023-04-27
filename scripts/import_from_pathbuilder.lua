@@ -89,7 +89,8 @@ function onInit()
       trained = Proficiency.import,
       expert = Proficiency.import,
       master = Proficiency.import,
-      legendary = Proficiency.import
+      legendary = Proficiency.import,
+      gender = Gender.import
     }
 end
 
