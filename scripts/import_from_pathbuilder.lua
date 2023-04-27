@@ -40,11 +40,11 @@ function onInit()
     Interface.onWindowOpened = onWindowOpened
 
     DBMap = {
-      name = Name.import,
+      name = Basic.import,
       ancestry = Ancestry.import,
       background = Background.import,
       class = Class.import,
-      alignment = Alignment.import,
+      alignment = Basic.import,
       str = Characteristic.import,
       dex = Characteristic.import,
       con = Characteristic.import,
@@ -90,7 +90,8 @@ function onInit()
       expert = Proficiency.import,
       master = Proficiency.import,
       legendary = Proficiency.import,
-      gender = Gender.import
+      gender = Basic.import,
+      age = Basic.import
     }
 end
 
@@ -168,7 +169,6 @@ function doPBImport(pcJson, importWindow)
     end
 
     if not nodeChar then
-      Debug.chat("couldn't find char")
       return
     end
 
@@ -198,8 +198,15 @@ function doPBImport(pcJson, importWindow)
       end
 
       local msg = DBMap[key](nodeChar, el, key)
+      
       if msg then 
-        addError(key, msg)
+        if type(msg) == "table" then 
+          for _, m in ipairs(msg) do 
+            addError(key, m)
+          end
+        else 
+          addError(key, msg)
+        end
       end
     end
 
