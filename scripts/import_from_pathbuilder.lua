@@ -91,7 +91,8 @@ function onInit()
       master = Proficiency.import,
       legendary = Proficiency.import,
       gender = Basic.import,
-      age = Basic.import
+      age = Basic.import,
+      size = Size.import
     }
 end
 

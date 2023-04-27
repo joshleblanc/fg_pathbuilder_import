@@ -51,5 +51,6 @@
     <script name="FocusSpell" file="scripts/importers/focus_spell.lua" />
     <script name="Proficiency" file="scripts/importers/proficiency.lua" />
     <script name="Basic" file="scripts/importers/basic.lua" />
+    <script name="Size" file="scripts/importers/size.lua" />
   </base>
 </root>
