@@ -1,19 +1,12 @@
 
-function exists(node, spell)
-  local slot = 0
+function exists(node, spell, spellLevel)
   local value = DB.getValue(spell, "name", "")
-  
-  if DB.getValue(spell, "spelltype", "") == "CANTRIP" then
-    slot = 0
-  else		
-    slot = tostring(DB.getValue(spell, "level", 1))
-  end
 
   local spellsets = DB.createChild(node, "spellset")
 
   for _, spellset in pairs(spellsets.getChildren()) do 
     local levels = DB.createChild(spellset, "levels")
-    local level = DB.createChild(levels, "level" .. slot)
+    local level = DB.createChild(levels, "level" .. spellLevel)
     local spells = DB.createChild(level, "spells")
 
     for _, spell in pairs(spells.getChildren()) do 
@@ -34,7 +27,7 @@ function import(node, value)
       local nSpell = Finder.getRecordGlobally(spellName, { "spell", "reference.spells", "spelldesc" })
       local nSpellName = DB.getValue(nSpell, "name", "")
 
-      if exists(node, nSpell) then
+      if exists(node, nSpell, spell.spellLevel) then
         table.insert(msgs, "level " .. spell.spellLevel .. " " .. spellName .. " already exists")
       else
         table.insert(msgs, "level " .. spell.spellLevel .. " " .. spellName .. " imported as " .. nSpellName)
