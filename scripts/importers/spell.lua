@@ -4,16 +4,16 @@ function exists(node, spell, spellLevel)
 
   local spellsets = DB.createChild(node, "spellset")
 
-  for _, spellset in pairs(spellsets.getChildren()) do 
+  for _, spellset in pairs(spellsets.getChildren()) do
     local levels = DB.createChild(spellset, "levels")
     local level = DB.createChild(levels, "level" .. spellLevel)
     local spells = DB.createChild(level, "spells")
 
-    for _, spell in pairs(spells.getChildren()) do 
+    for _, spell in pairs(spells.getChildren()) do
       local name = DB.getValue(spell, "name", "")
-      if name == value then 
+      if name == value then
         return true
-      end 
+      end
     end
   end
 
