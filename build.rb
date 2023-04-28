@@ -10,7 +10,7 @@ input = [
   "extension.xml"
 ]
 
-zipfile_name = "pathbuilder_import.pak"
+zipfile_name = "pathbuilder_import.ext"
 
 FileUtils.rm(zipfile_name) if File.exist?(zipfile_name) 
 
