@@ -2,7 +2,6 @@ require 'rubygems'
 require 'zip'
 require 'fileutils'
 
-folder = "."
 input = [
   "scripts/**/*",
   "strings/**/*",
