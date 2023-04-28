@@ -20,9 +20,21 @@ function exists(node, spell, spellLevel)
   return false
 end
 
+function createSpellLevel(node, spellLevel)
+  local spellsets = DB.createChild(node, "spellset")
+
+  for _, spellset in pairs(spellsets.getChildren()) do
+    local levels = DB.createChild(spellset, "levels")
+    local level = DB.createChild(levels, "level" .. spellLevel)
+
+    DB.setValue(level, "level", "number", spellLevel)
+  end
+end
+
 function import(node, value)
   local msgs = {}
   for _, spell in ipairs(value.spells) do
+    createSpellLevel(node, spell.spellLevel)
     for _, spellName in ipairs(spell.list) do 
       local nSpell = Finder.getRecordGlobally(spellName, { "spell", "reference.spells", "spelldesc" })
       local nSpellName = DB.getValue(nSpell, "name", "")
