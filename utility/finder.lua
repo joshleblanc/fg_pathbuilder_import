@@ -1,4 +1,4 @@
-function fixString(str)
+local function fixString(str)
   if not str then return "" end
 
   str = GameSystem.removeActionSymbols(str)
@@ -9,7 +9,7 @@ function fixString(str)
   return str
 end
 
-function find(sRecordName, aDataMap, fn)
+local function find(sRecordName, aDataMap, fn)
   local names = {}
   local nodeMap = {}
   sRecordName = fixString(sRecordName)
@@ -40,14 +40,6 @@ function find(sRecordName, aDataMap, fn)
   else
     return nil
   end
-end
-
-function compare(a, b)
-  if Fzy.has_match(a, b) then 
-    return Fzy.score(a, b) > 7
-  end
-
-  return false
 end
 
 function getLookupDataRecordGlobally(sRecordName, sLookupDataType, fn)
