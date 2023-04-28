@@ -4,6 +4,10 @@ function exists(node, spell, spellLevel)
 
   local spellsets = DB.createChild(node, "spellset")
 
+  if not spellLevel then 
+    spellLevel = DB.getValue(spell, "level", 0)
+  end
+
   for _, spellset in pairs(spellsets.getChildren()) do
     local levels = DB.createChild(spellset, "levels")
     local level = DB.createChild(levels, "level" .. spellLevel)
