@@ -2,7 +2,7 @@
 
 <root version="3.3">
   <properties>
-    <name>Pathbuilder Importer</name>
+    <name>Feature: Pathbuilder Import</name>
     <version>0.1</version>
     <loadorder>50</loadorder>
     <description>
