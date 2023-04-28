@@ -12,4 +12,5 @@ local SIZES = {
 
 function import(node, value)
   DB.setValue(node, "size", "string", SIZES[value])
+  return value
 end
