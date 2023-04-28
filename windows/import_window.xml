@@ -29,6 +29,10 @@
           <field>name</field>
         </sortby>
       </windowlist>
+      <scrollbar>
+        <anchored to="errors" />
+        <target>errors</target>
+      </scrollbar>
       <formattedtextfield name="statblock">
         <frame>
           <name>fielddark</name>
@@ -39,6 +43,10 @@
         </empty>
         <bounds>41,101,489,437</bounds>
       </formattedtextfield>
+      <scrollbar>
+        <anchored to="statblock" />
+        <target>statblock</target>
+      </scrollbar>
       <stringcontrol name="Label1">
         <frame>
           <name>windowtitle</name>
