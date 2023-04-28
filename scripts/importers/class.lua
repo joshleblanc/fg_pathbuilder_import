@@ -1,11 +1,11 @@
 local BAD_SOURCES = {
-  "Troubles in Otari Player's Resource" -- heck this book and it's level 4 classes
+  "Troubles in Otari Player's Resource" -- heck this book and its level 4 classes
 }
 
 function find_class(value)
   return Finder.getRecordGlobally(value, { "reference.classes" }, function(node)
     
-    if StringManager.contains(BAD_SOURCES, node.getCategory()) then
+    if StringManager.contains(BAD_SOURCES, DB.getModule(node)) then
       return false
     end
 
