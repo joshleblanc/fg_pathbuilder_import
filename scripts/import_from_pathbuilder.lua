@@ -231,9 +231,10 @@ function doPBImport(pcJson, importWindow)
     end)
 
     for _, window in ipairs(windowsOpen) do 
-      if type(window) == "table" then -- Someone got an error that this was unindexable once. 🤷‍♂️
+      pcall(function()
         window.close()
-      end
+      end)
+      
     end
     windowsOpen = {}
 
