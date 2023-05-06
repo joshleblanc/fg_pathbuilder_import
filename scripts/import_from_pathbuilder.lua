@@ -154,7 +154,11 @@ function onReceiveOOBMessage(data)
   if data.action == "start_import" then
     if Session.IsHost then
       local nChar = doPBImport(data.json, data.updateExisting == "1")
-      DB.setOwner(nChar, data.user)
+
+      if DB.getOwner(nChar) == nil then 
+        DB.setOwner(nChar, data.user)
+      end
+      
       local name = DB.getValue(nChar, "name", "")
 
       Comm.deliverOOBMessage({ name = name, action = "import_complete" }, { data.user })
