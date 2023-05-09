@@ -40,7 +40,7 @@ function import(node, value)
   for _, spell in ipairs(value.spells) do
     createSpellLevel(node, spell.spellLevel)
     for _, spellName in ipairs(spell.list) do 
-      local nSpell = Finder.getRecordGlobally(spellName, { "spell", "reference.spells", "spelldesc" })
+      local nSpell = Finder.getRecordGlobally(spellName, LibraryData.getMappings("spell"))
       local nSpellName = DB.getValue(nSpell, "name", "")
 
       if exists(node, nSpell, spell.spellLevel) then

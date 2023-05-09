@@ -1,5 +1,5 @@
 function findBackground(value)
-  return Finder.getRecordGlobally(value, { "reference.backgrounds" })
+  return Finder.getRecordGlobally(value, LibraryData.getMappings("background"))
 end
 
 function import(node, value)

@@ -1,6 +1,5 @@
 function findItem(name)
-  local searchPaths = { "reference.equipment", "reference.weapon", "reference.armor", "reference.magicitems", "item" }
-  return Finder.getRecordGlobally(name, searchPaths);
+  return Finder.getRecordGlobally(name, LibraryData.getMappings("item"))
 end
 
 --[[

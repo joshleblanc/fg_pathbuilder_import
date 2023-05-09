@@ -3,7 +3,7 @@ local BAD_SOURCES = {
 }
 
 function find_class(value)
-  return Finder.getRecordGlobally(value, { "reference.classes" }, function(node)
+  return Finder.getRecordGlobally(value, LibraryData.getMappings("class"), function(node)
     
     if StringManager.contains(BAD_SOURCES, DB.getModule(node)) then
       return false

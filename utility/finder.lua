@@ -43,7 +43,7 @@ local function find(sRecordName, aDataMap, fn)
 end
 
 function getLookupDataRecordGlobally(sRecordName, sLookupDataType, fn)
-	local aDataMap = { "lookupdata", "reference.lookupdata" }
+	local aDataMap = LibraryData.getMappings("lookupdata")
 
   if sLookupDataType then 
     sLookupDataType = fixString(sLookupDataType)
@@ -77,7 +77,7 @@ function getFeat(sFeatName, sTrait, fn)
 
   sTrait = fixString(sTrait)
 
-  return find(sFeatName, { "feat", "reference.feats" }, function(node)
+  return find(sFeatName, LibraryData.getMappings("feat"), function(node)
     local featCheckTraits = fixString(DB.getValue(node, "traits", ""))
 
     if fn and not fn(node) then return false end
