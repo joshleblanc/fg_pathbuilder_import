@@ -1,5 +1,5 @@
 function findRace(value)
-  return Finder.getRecordGlobally(value, { "reference.ancestries", "race" }) 
+  return Finder.getRecordGlobally(value, LibraryData.getMappings("race"))
 end
 
 function import(node, value)
