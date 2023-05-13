@@ -154,8 +154,13 @@ function onReceiveOOBMessage(data)
   if data.action == "start_import" then
     if Session.IsHost then
       local nChar = doPBImport(data.json, data.updateExisting == "1")
+      if not nChar then 
+        Comm.deliverOOBMessage({ name = name, action = "import_failed" }, { data.user })
+        return 
+      end 
 
-      if DB.getOwner(nChar) == nil then 
+      local owner = DB.getOwner(nChar)
+      if owner == nil or owner == "" then 
         DB.setOwner(nChar, data.user)
       end
       
@@ -170,9 +175,11 @@ function onReceiveOOBMessage(data)
     local char = findChar(data.name)
   
     importWindow.errors.setDatabaseNode(char.getChild("pb_import_errors"))
-    Interface.dialogMessage(function()
-      -- do nothing
-    end, "Import complete", "Pathbuilder Import")
+    prompt("Import complete")
+  end
+
+  if data.action == "import_failed" then
+    prompt("Failed to import character. Please double check your JSON")
   end
 end
 
@@ -185,10 +192,11 @@ function tryImport(json)
   local updateExisting = importWindow.overwrite.getValue()
 
   if Session.IsHost then
-    doPBImport(json, updateExisting)
-    Interface.dialogMessage(function()
-      -- do nothing
-    end, "Import complete", "Pathbuilder Import")
+    if doPBImport(json, updateExisting) then
+      prompt("Import complete")
+    else
+      prompt("Failed to import character. Please double check your JSON")
+    end
   else
     Comm.deliverOOBMessage({
       action = "start_import",
@@ -199,12 +207,27 @@ function tryImport(json)
   end
 end
 
+function prompt(msg)
+  Interface.dialogMessage(function() 
+    -- do nothing
+  end, msg, "Pathbuilder Import")
+end
+
 -- NOTE: rulesets/PFRPG2.pak/campaign/scripts/manager_char.lua has some good stuff in it
 function doPBImport(pcJson, updateExisting)
   local importWindow = getImportWindow()
 
   running = true
-  data = JSONUtil.parseJson(pcJson)
+
+  local status, data = pcall(JSONUtil.parseJson, pcJson)
+
+  if not status then 
+    return
+  end
+
+  if type(data) ~= "table" or not data.build then 
+    return
+  end
 
   local nodeChar
   if updateExisting then
