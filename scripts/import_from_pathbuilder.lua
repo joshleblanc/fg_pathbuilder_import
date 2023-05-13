@@ -191,6 +191,8 @@ function tryImport(json)
   local importWindow = getImportWindow()
   local updateExisting = importWindow.overwrite.getValue()
 
+  prompt("Importing, please wait...")
+  
   if Session.IsHost then
     if doPBImport(json, updateExisting) then
       prompt("Import complete")
@@ -219,7 +221,8 @@ function doPBImport(pcJson, updateExisting)
 
   running = true
 
-  local status, data = pcall(JSONUtil.parseJson, pcJson)
+  local status, retVal = pcall(JSONUtil.parseJson, pcJson)
+  data = retVal
 
   if not status then 
     return
@@ -288,6 +291,7 @@ function doPBImport(pcJson, updateExisting)
       end
     end
   end
+
 
   EachKey(function(key, value)
     if DBMap[key] then
