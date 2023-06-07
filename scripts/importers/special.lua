@@ -45,7 +45,15 @@ function import(node, value)
     return value .. " already exists"
   end
 
-  CharManager.addInfoDB(node, "referenceclassability", record.getNodeName())
+  local nodeSource = CharManager.resolveRefNode(record.getNodeName())
+  local sClassName = StringManager.strip(DB.getValue(nodeSource, "...name", ""));
+	local sFeatureName = DB.getValue(nodeSource, "name", "");
+	local sFeatureType = StringManager.strip(sFeatureName):lower();
+	local sFeatureTypeWithClass = sFeatureType .. " (" .. sClassName:lower() .. ")";
+
+  Debug.chat(nodeSource, sClassName, sFeatureName, sFeatureType, sFeatureTypeWithClass)
+
+  CharManager.addInfoDB(node, "reference_lookupdata", record.getNodeName())
 
   return value .. " imported as " .. DB.getValue(record, "name", "")
 end
