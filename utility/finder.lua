@@ -4,6 +4,7 @@ local function fixString(str)
   str = GameSystem.removeActionSymbols(str)
   str = str:lower()
   str = str:gsub("(.+) %(.+%)", "%1")
+  str = str:gsub("(.+) %[.+%]", "%1")
   str = StringManager.trim(str)
 
   return str
@@ -32,6 +33,8 @@ local function find(sRecordName, aDataMap, fn)
   end)
 
   local winner = results[1]
+
+  Debug.chat(sRecordName, winner)
 
   if winner and winner[3] > 0 then
     local name = names[winner[1]]

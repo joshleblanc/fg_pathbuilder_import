@@ -19,8 +19,6 @@ DEPENDENCIES = {
   background = { "ancestry" }
 }
 
-local mappingCache = {}
-
 function importFromPathbuilder(sCommand, sParams)
   Interface.openWindow("import_window", "")
 end
@@ -221,14 +219,14 @@ function prompt(msg)
   end, msg, "Pathbuilder Import")
 end
 
-function importKey(key, doneMap, call)
+function importKey(key, doneMap, call, mappingCache)
 
   local arr = mappingCache[key]
   if not arr or doneMap[key] then return end
 
   if DEPENDENCIES[key] then
     for _, dep in ipairs(DEPENDENCIES[key]) do
-      importKey(dep, doneMap, call)
+      importKey(dep, doneMap, call, mappingCache)
     end
   end
 
@@ -316,6 +314,8 @@ function doPBImport(pcJson, updateExisting)
     end
   end
 
+  mappingCache = {}
+
   -- iterate every key in the json file and map it to the right import key
   EachKey(function(key, value)
     if DBMap[key] then
@@ -336,8 +336,9 @@ function doPBImport(pcJson, updateExisting)
 
 
   local doneMap = {}
+
   for key, _ in pairs(DBMap) do
-    importKey(key, doneMap, call)
+    importKey(key, doneMap, call, mappingCache)
   end
 
   for _, window in ipairs(windowsOpen) do

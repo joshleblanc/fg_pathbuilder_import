@@ -35,6 +35,8 @@ function import(node, value)
 
   local record = Finder.getLookupDataRecordGlobally(adj)
 
+  Debug.chat(value, adj)
+  Debug.chat(record)
   if not record then
     return value .. " not found"
   end
