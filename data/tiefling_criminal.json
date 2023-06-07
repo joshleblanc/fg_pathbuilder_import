@@ -1,0 +1,330 @@
+{
+  "success": true,
+  "build": {
+    "name": "Sakroa (aoa)",
+    "class": "Champion",
+    "dualClass": null,
+    "level": 3,
+    "ancestry": "Human",
+    "heritage": "Tiefling",
+    "background": "Criminal",
+    "alignment": "NG",
+    "gender": "Not set",
+    "age": "Not set",
+    "deity": "Serenrae ",
+    "size": 2,
+    "keyability": "cha",
+    "languages": [],
+    "attributes": {
+      "ancestryhp": 8,
+      "classhp": 10,
+      "bonush p": 0,
+      "bonushpPerLevel": 1,
+      "speed": 25,
+      "speedBonus ": -5
+    },
+    "abilities": {
+      "str": 18,
+      "dex": 12,
+      "con": 16,
+      "int": 10,
+      "wis": 12,
+      "cha": 14,
+      "breakdown": {
+        "ancestryFree": [
+          "Str",
+          "Con"
+        ],
+        "ancestryBoosts": [],
+        "ancestryFlaws": [],
+        "backgroundBoosts": [
+          "Dex",
+          "Str"
+        ],
+        "classBoosts": [
+          "Str"
+        ],
+        "mapLevelledBoosts": {
+          "1": [
+            "Str",
+            "Con",
+            "Wis",
+            "Cha"
+          ],
+          "2": [
+            "Con"
+          ],
+          "3": [
+            "Cha"
+          ]
+        }
+      }
+    },
+    "proficiencies": {
+      "classDC": 2,
+      "perception": 2,
+      "f ortitude": 4,
+      "reflex": 2,
+      "will": 4,
+      "heavy": 2,
+      "medium": 2,
+      "light": 2,
+      "unarmored": 2,
+      "advanced": 0,
+      "martial": 2,
+      "simple": 2,
+      "unarmed": 2,
+      "castingArcane": 0,
+      "castin gDivine": 2,
+      "castingOccult": 0,
+      "castingPrimal": 0,
+      "ac robatics": 0,
+      "arcana": 0,
+      "athletics": 0,
+      "crafting": 0,
+      "deception": 0,
+      "diplomacy": 4,
+      "intimidation": 4,
+      "medi cine": 2,
+      "nature": 0,
+      "occultism": 0,
+      "performance": 0,
+      " religion": 2,
+      "society": 0,
+      "stealth": 2,
+      "survival": 0,
+      " thievery": 0
+    },
+    "mods": {},
+    "feats": [
+      [
+        "Shield Block",
+        null,
+        "Awarded Feat",
+        1
+      ],
+      [
+        "Experienced Smuggler",
+        null,
+        "Awarded Feat",
+        1
+      ],
+      [
+        "Fiendish Eyes",
+        null,
+        "Ancestry Feat",
+        1
+      ],
+      [
+        "Tiefling",
+        null,
+        "Heritage",
+        1
+      ],
+      [
+        "Natural Ambition",
+        null,
+        "Ancestry Feat",
+        1
+      ],
+      [
+        "Desperate Prayer",
+        null,
+        "Class Feat",
+        1
+      ],
+      [
+        "Deity's Domain",
+        null,
+        "Class Feat",
+        1
+      ],
+      [
+        "Weight of Guilt",
+        null,
+        "Class Feat",
+        2
+      ],
+      [
+        "Intimidating Glare",
+        null,
+        "Skill Feat",
+        2
+      ],
+      [
+        "Marshal Dedication",
+        null,
+        "Archetype Feat",
+        2
+      ],
+      [
+        "Unconventional Weaponry",
+        null,
+        "Ancestry Feat",
+        3
+      ],
+      [
+        "Toughness",
+        null,
+        "General Feat",
+        3
+      ]
+    ],
+    "specials": [
+      "Glimpse of Redemption",
+      "Tenets of Good",
+      "Champion's Code",
+      "Devotion Spells",
+      "Darkvision",
+      "Low-Light Vision",
+      "Domain: Fire",
+      "Redeemer [Neutral Good]",
+      "Deific Weapon",
+      "Diplomacy",
+      "Divine Ally (Shield)",
+      "Rhoka Sword",
+      "Tiefling"
+    ],
+    "lores": [
+      [
+        "Underworld",
+        2
+      ]
+    ],
+    "equipmentContainers": {
+      "fe43ec5e-ba12-4627-a9dd-4c8242e71d67": {
+        "containerName": "Backpack",
+        "bagOfHolding": false,
+        "backpack": true
+      },
+      "482feea4-794e-452d-beaa-cdada38a78ae": {
+        "containerName": "Backpack",
+        "bagOfHolding": false,
+        "backpack": true
+      }
+    },
+    "equipment": [
+      [
+        "Backpack",
+        1
+      ],
+      [
+        "Bedroll",
+        1,
+        "482feea4-794e-452d-beaa-cdada38a78ae"
+      ],
+      [
+        "Chalk",
+        10,
+        "482feea4-794e-452d-beaa-cdada38a78ae"
+      ],
+      [
+        "Flint and Steel",
+        1,
+        "482feea4-794e-452d-beaa-cdada38a78ae"
+      ],
+      [
+        "Rope",
+        1,
+        "482feea4-794e-452d-beaa-cdada38a78ae"
+      ],
+      [
+        "Rations",
+        2,
+        "482feea4-794e-452d-beaa-cdada38a78ae"
+      ],
+      [
+        "Torch",
+        5,
+        "482feea4-794e-452d-beaa-cdada38a78ae"
+      ],
+      [
+        "Waterskin",
+        1,
+        "482feea4-794e-452d-beaa-cdada38a78ae"
+      ],
+      [
+        "Soap",
+        1,
+        "482feea4-794e-452d-beaa-cdada38a78ae"
+      ]
+    ],
+    "specificProficiencies": {
+      "trained": [],
+      "expert": [],
+      "master": [],
+      "legendary": []
+    },
+    "weapons": [
+      {
+        "name": "Rhoka Sword",
+        "qty": 1,
+        "prof": "martial",
+        "die": "d8",
+        "pot": 1,
+        "str": "",
+        "mat": null,
+        "display": "+1 Rhoka Sword",
+        "runes": [],
+        "attack": 10,
+        "damageBonus": 4,
+        "extraDamage": []
+      }
+    ],
+    "money": {
+      "cp": 0,
+      "sp": 5,
+      "gp": 2,
+      "pp": 0
+    },
+    "armor": [
+      {
+        "name": "Full Plate",
+        "qty": 1,
+        "prof": "heavy",
+        "pot": 0,
+        "res": "",
+        "ma t": null,
+        "display": "Full Plate",
+        "worn": true,
+        "runes": []
+      },
+      {
+        "name": "Steel Shield",
+        "qty": 1,
+        "prof": "shield",
+        "pot": 0,
+        "res": "",
+        "mat": null,
+        "display": "",
+        "worn": true,
+        "runes": []
+      }
+    ],
+    "spellCasters": [],
+    "focusPoints": 1,
+    "focus": {
+      "divine": {
+        "cha": {
+          "abilityBonus": 2,
+          "proficiency": 2,
+          "itemBonus": 0,
+          "focusCantrips": [],
+          "focusSpells": [
+            "Lay on Hands"
+          ]
+        }
+      }
+    },
+    "formula": [],
+    "acTotal": {
+      "acProfBonus": 5,
+      "acAbilityBonus": 0,
+      "acItemBonus": 6,
+      "acTotal": 21,
+      "shieldBonus": "2"
+    },
+    "pets ": [],
+    "familiars": []
+  }
+}

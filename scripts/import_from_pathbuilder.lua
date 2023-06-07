@@ -15,6 +15,12 @@ local updateExclusions = {
   "armor"
 }
 
+DEPENDENCIES = {
+  background = { "ancestry" }
+}
+
+local mappingCache = {}
+
 function importFromPathbuilder(sCommand, sParams)
   Interface.openWindow("import_window", "")
 end
@@ -154,16 +160,16 @@ function onReceiveOOBMessage(data)
   if data.action == "start_import" then
     if Session.IsHost then
       local nChar = doPBImport(data.json, data.updateExisting == "1")
-      if not nChar then 
+      if not nChar then
         Comm.deliverOOBMessage({ name = name, action = "import_failed" }, { data.user })
-        return 
-      end 
+        return
+      end
 
       local owner = DB.getOwner(nChar)
-      if owner == nil or owner == "" then 
+      if owner == nil or owner == "" then
         DB.setOwner(nChar, data.user)
       end
-      
+
       local name = DB.getValue(nChar, "name", "")
 
       Comm.deliverOOBMessage({ name = name, action = "import_complete" }, { data.user })
@@ -173,7 +179,7 @@ function onReceiveOOBMessage(data)
   if data.action == "import_complete" then
     local importWindow = getImportWindow()
     local char = findChar(data.name)
-  
+
     importWindow.errors.setDatabaseNode(char.getChild("pb_import_errors"))
     prompt("Import complete")
   end
@@ -192,7 +198,7 @@ function tryImport(json)
   local updateExisting = importWindow.overwrite.getValue()
 
   prompt("Importing, please wait...")
-  
+
   if Session.IsHost then
     if doPBImport(json, updateExisting) then
       prompt("Import complete")
@@ -210,9 +216,27 @@ function tryImport(json)
 end
 
 function prompt(msg)
-  Interface.dialogMessage(function() 
+  Interface.dialogMessage(function()
     -- do nothing
   end, msg, "Pathbuilder Import")
+end
+
+function importKey(key, doneMap, call)
+
+  local arr = mappingCache[key]
+  if not arr or doneMap[key] then return end
+
+  if DEPENDENCIES[key] then
+    for _, dep in ipairs(DEPENDENCIES[key]) do
+      importKey(dep, doneMap, call)
+    end
+  end
+
+  for _, el in ipairs(arr) do
+    call(key, el)
+  end
+
+  doneMap[key] = true
 end
 
 -- NOTE: rulesets/PFRPG2.pak/campaign/scripts/manager_char.lua has some good stuff in it
@@ -224,11 +248,11 @@ function doPBImport(pcJson, updateExisting)
   local status, retVal = pcall(JSONUtil.parseJson, pcJson)
   data = retVal
 
-  if not status then 
+  if not status then
     return
   end
 
-  if type(data) ~= "table" or not data.build then 
+  if type(data) ~= "table" or not data.build then
     return
   end
 
@@ -292,30 +316,34 @@ function doPBImport(pcJson, updateExisting)
     end
   end
 
-
+  -- iterate every key in the json file and map it to the right import key
   EachKey(function(key, value)
     if DBMap[key] then
-      -- Debug.print("Importing: " .. key)
 
-      -- if the value is an array, run the import on each element
+      -- if the value is an array, store each element
       if type(value) == "table" then
         for _, el in ipairs(value) do
-          call(key, el)
+          mappingCache[key] = mappingCache[key] or {}
+          table.insert(mappingCache[key], el)
         end
-        -- otherwise just pass the value
+        -- otherwise just store the value
       else
-        call(key, value)
+        mappingCache[key] = mappingCache[key] or {}
+        table.insert(mappingCache[key], value)
       end
-    else
-      -- Debug.print("No mapping found for: " .. key)
     end
   end)
+
+
+  local doneMap = {}
+  for key, _ in pairs(DBMap) do
+    importKey(key, doneMap, call)
+  end
 
   for _, window in ipairs(windowsOpen) do
     pcall(function()
       window.close()
     end)
-
   end
   windowsOpen = {}
 
