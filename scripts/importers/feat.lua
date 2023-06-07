@@ -7,7 +7,7 @@ function isFeatDupe(nodeChar, nodeFeat)
 
   for _, el in pairs(featList.getChildren()) do
     if DB.getValue(el, "name", "") == DB.getValue(nodeFeat, "name", "") then
-			return true;
+			return el;
 		end
   end
 
@@ -36,6 +36,10 @@ function import(node, value)
   end
 
   CharManager.addInfoDB(node, "referencefeat", feat.getNodeName())
+
+  local nFeat = isFeatDupe(node, feat)
+  DB.setValue(nFeat, "level_applied", "number", value[4])
+
 
   return value[1] .. " imported as " .. DB.getValue(feat, "name", "")
 end
