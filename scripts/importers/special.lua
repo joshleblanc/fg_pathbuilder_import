@@ -35,8 +35,6 @@ function import(node, value)
 
   local record = Finder.getLookupDataRecordGlobally(adj)
 
-  Debug.chat(value, adj)
-  Debug.chat(record)
   if not record then
     return value .. " not found"
   end
@@ -44,14 +42,6 @@ function import(node, value)
   if exists(node, record) then
     return value .. " already exists"
   end
-
-  local nodeSource = CharManager.resolveRefNode(record.getNodeName())
-  local sClassName = StringManager.strip(DB.getValue(nodeSource, "...name", ""));
-	local sFeatureName = DB.getValue(nodeSource, "name", "");
-	local sFeatureType = StringManager.strip(sFeatureName):lower();
-	local sFeatureTypeWithClass = sFeatureType .. " (" .. sClassName:lower() .. ")";
-
-  Debug.chat(nodeSource, sClassName, sFeatureName, sFeatureType, sFeatureTypeWithClass)
 
   CharManager.addInfoDB(node, "reference_lookupdata", record.getNodeName())
 

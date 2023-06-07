@@ -34,8 +34,6 @@ local function find(sRecordName, aDataMap, fn)
 
   local winner = results[1]
 
-  Debug.chat(sRecordName, winner)
-
   if winner and winner[3] > 0 then
     local name = names[winner[1]]
 
