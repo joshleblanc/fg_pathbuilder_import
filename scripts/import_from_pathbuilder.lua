@@ -16,7 +16,9 @@ local updateExclusions = {
 }
 
 DEPENDENCIES = {
-  background = { "ancestry" }
+  background = { "ancestry" },
+  spellCasters = { "specials" },
+  focusSpells = { "specials" }
 }
 
 function importFromPathbuilder(sCommand, sParams)
