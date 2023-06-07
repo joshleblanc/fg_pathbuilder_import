@@ -33,7 +33,7 @@ local function find(sRecordName, aDataMap, fn)
 
   local winner = results[1]
 
-  if winner then
+  if winner and winner[3] > 0 then
     local name = names[winner[1]]
 
     return nodeMap[name]
