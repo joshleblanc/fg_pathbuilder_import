@@ -26,14 +26,37 @@ function exists(nodeChar, nodeFeature)
   return false
 end
 
+-- Pathbuilder often prefixes record names, such as Arcane School: Evocation
+-- we only care about the Evocation part
+function removePrefix(value)
+  local withoutPrefix = value:match(".+: (.+)")
+
+  if withoutPrefix then 
+    return withoutPrefix 
+  else
+    return value
+  end
+end
+
+-- Pathbuilder uses the suffix "Patron" when dealing with witch patrons
+-- We need to remove that if we're importing a patron so we can match it against
+-- fgu data
+function removePatron(value)
+  local withoutPatron = value:match("(.+) Patron$")
+
+  if withoutPatron then 
+    return withoutPatron
+  else
+    return value
+  end
+end
+
 
 function import(node, value)
-  local adj = value:match(".+: (.+)")
-  if not adj then
-    adj = value
-  end
+  value = removePrefix(value)
+  value = removePatron(value)
 
-  local record = Finder.getLookupDataRecordGlobally(adj)
+  local record = Finder.getLookupDataRecordGlobally(value)
 
   if not record then
     return value .. " not found"
