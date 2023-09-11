@@ -1,0 +1,371 @@
+{
+    "success": true,
+    "build": {
+        "name": "Renali",
+        "class": " Sorcerer",
+        "dualClass": null,
+        "level": 7,
+        "ancestry": "Anadi",
+        "heritage": "Spindly Anadi",
+        "background": "Emissary",
+        "alignment": "CG",
+        "gender": "female",
+        "age": "24",
+        "deity": "Not set",
+        "size": 2,
+        "sizeName": "Medium",
+        "keyability": "cha",
+        "languages": [
+            "Anadi",
+            "Common",
+            "Draconic",
+            "Elven",
+            "Orcish",
+            "Path builder Custom Dialect 0"
+        ],
+        "rituals": [],
+        "resistances": [],
+        "attributes": {
+            "ancestryhp": 8,
+            "classhp": 6,
+            "bonushp ": 0,
+            "bonushpPerLevel": 0,
+            "speed": 25,
+            "speedBonus": 10
+        },
+        "abilities": {
+            "str": 10,
+            "dex": 18,
+            "con": 14,
+            "int": 14,
+            "wis": 14,
+            "cha": 18,
+            "breakdown": {
+                "ancestryFree": [
+                    "Cha"
+                ],
+                "ancestryBoosts": [
+                    "Dex",
+                    "Wis"
+                ],
+                "ancestryFlaws": [
+                    "Con"
+                ],
+                "backgroundBoosts": [
+                    "Cha",
+                    "Dex"
+                ],
+                "classBoosts": [
+                    "Cha"
+                ],
+                "mapLevelledBoosts": {
+                    "1": [
+                        "Dex",
+                        "Cha",
+                        "Con",
+                        "Int"
+                    ],
+                    "2": [
+                        "Int"
+                    ],
+                    "3": [
+                        "Con"
+                    ],
+                    "4": [
+                        "Wis"
+                    ],
+                    "5": [
+                        "Dex"
+                    ],
+                    "7": [
+                        "Con"
+                    ]
+                }
+            }
+        },
+        "proficiencies": {
+            "classDC": 4,
+            "perception": 2,
+            "fortitude": 4,
+            "reflex": 2,
+            "will": 4,
+            "heavy": 0,
+            "medium": 0,
+            "light": 0,
+            "unarmored": 2,
+            "advanced": 0,
+            "martial": 0,
+            "simple": 2,
+            "unarmed": 2,
+            "castingArcane": 0,
+            "castingDivine": 0,
+            "castingOccult": 4,
+            "castingPrimal": 0,
+            "acrobatics": 0,
+            "arcana": 0,
+            "athletics": 2,
+            "crafting": 2,
+            "deception": 2,
+            "diplomacy": 0,
+            "intimidation": 2,
+            "medicine": 4,
+            "nature": 2,
+            "occultism": 2,
+            "performance": 0,
+            "religion": 0,
+            "society": 2,
+            "stealth": 2,
+            "survival": 4,
+            " thievery": 0
+        },
+        "mods": {},
+        "feats": [
+            [
+                "Specialty Crafting",
+                null,
+                "Awarded Feat",
+                3
+            ],
+            [
+                "Multilingual",
+                null,
+                "Awarded Feat",
+                1
+            ],
+            [
+                "Skittertalk",
+                null,
+                "Ancestry Feat",
+                1
+            ],
+            [
+                "Anadi Lore",
+                null,
+                "Ancestry Feat",
+                1
+            ],
+            [
+                "Spindly Anadi",
+                null,
+                "Heritage",
+                1
+            ],
+            [
+                "Forager",
+                null,
+                "Skill Feat",
+                2
+            ],
+            [
+                "Reach Spell",
+                null,
+                "Class Feat",
+                2
+            ],
+            [
+                "Web Weaver",
+                null,
+                "Ancestry Feat",
+                3
+            ],
+            [
+                "Fleet",
+                null,
+                "General Feat",
+                3
+            ],
+            [
+                "Terrain Stalker",
+                "Terrain Stalker",
+                "Skill Feat",
+                4
+            ],
+            [
+                "Widen Spell",
+                null,
+                "Class Feat",
+                4
+            ],
+            [
+                "Web Walker",
+                null,
+                "Ancestry Feat",
+                5
+            ],
+            [
+                "Battle Medicine",
+                null,
+                "Skill Feat",
+                6
+            ],
+            [
+                "Steady Spellcasting",
+                null,
+                "Class Feat",
+                6
+            ],
+            [
+                "Reassuring Presence",
+                null,
+                "Ancestry Feat",
+                7
+            ],
+            [
+                "Pick up the Pace",
+                null,
+                "General Feat",
+                7
+            ]
+        ],
+        "specials": [
+            "Change Shape (Anadi)",
+            "Fangs (Anadi)",
+            "Bloodline: Aberrant",
+            "Signature Spells",
+            "Magical Fortitude",
+            "Expert Spellcaster",
+            "Spindly Anadi"
+        ],
+        "lores": [
+            [
+                "Anadi",
+                2
+            ],
+            [
+                "A City",
+                2
+            ]
+        ],
+        "equipmentContainers": {},
+        "equipment": [
+            [
+                "Healer's Tools (Expanded)",
+                1,
+                "Invested"
+            ]
+        ],
+        "specificProficiencies": {
+            "trained": [],
+            "expert": [],
+            "master": [],
+            "legendary": []
+        },
+        "weapons": [],
+        "money": {
+            "cp": 0,
+            "sp": 0,
+            "gp": 15,
+            "pp": 0
+        },
+        "armor": [
+            {
+                "name": "Explorer's Clothing",
+                "qty": 1,
+                "prof": "unarmored",
+                "pot": 1,
+                "res": "",
+                "mat": null,
+                "display": "+1 Explorer's Clothing",
+                "worn": true,
+                "runes": []
+            }
+        ],
+        "spellCasters": [
+            {
+                "name": "Sorcerer",
+                "magicTradition": "occult",
+                "spellcastingType": "spontaneous",
+                "ability": "cha",
+                "proficiency": 4,
+                "focusPoints": 0,
+                "innate": false,
+                "perDay": [
+                    5,
+                    4,
+                    4,
+                    4,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "spells": [
+                    {
+                        "spellLevel": 0,
+                        "list": [
+                            "Detect Magic",
+                            "Ghost Sound",
+                            "Mage Hand",
+                            "Message",
+                            "Daze"
+                        ]
+                    },
+                    {
+                        "spellLevel": 1,
+                        "list": [
+                            "Color Spray",
+                            "Illusory Object",
+                            "Illusory Disguise",
+                            "Spider Sting"
+                        ]
+                    },
+                    {
+                        "spellLevel": 2,
+                        "list": [
+                            "Illusory Creature",
+                            "Invisibility",
+                            "Soothe",
+                            "Touch of Idiocy"
+                        ]
+                    },
+                    {
+                        "spellLevel": 3,
+                        "list": [
+                            "Slow",
+                            "Hypercognition",
+                            "Shadow Spy",
+                            "Vampiric Touch"
+                        ]
+                    },
+                    {
+                        "spellLevel": 4,
+                        "list": [
+                            "Chromatic Ray",
+                            "Suggestion",
+                            "Confusion"
+                        ]
+                    }
+                ],
+                "prepared": [],
+                "blendedSpells": []
+            }
+        ],
+        "focusPoints": 1,
+        "focus": {
+            "occult": {
+                "cha": {
+                    "abilityBonus": 4,
+                    "proficiency": 4,
+                    "itemBonus": 0,
+                    "focusCantrips": [],
+                    "focusSpells": [
+                        "Tentacular Limbs"
+                    ]
+                }
+            }
+        },
+        "formula": [],
+        "acTotal": {
+            "acProfBonus": 9,
+            "acAbilityBonus": 4,
+            "acItemBonus": 1,
+            "acTotal": 24,
+            "shieldBonus": null
+        },
+        "pets": [],
+        "familiars": []
+    }
+}
