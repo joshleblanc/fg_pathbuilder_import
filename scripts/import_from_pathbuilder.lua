@@ -342,6 +342,21 @@ function doPBImport(pcJson, updateExisting)
     end
   end)
 
+  -- We want to import instincts first, so we know what instict the character is
+  -- to properly map anmials, dragons, etc back to the character since pathbuilder exports those 
+  -- as "Cat", "Black", etc.
+  if mappingCache["specials"] then 
+    table.sort(mappingCache["specials"], function(a,b)
+      if StringManager.endsWith(a, "Instinct") then 
+        return true
+      end
+      return false
+    end)
+  end
+
+  Debug.chat(mappingCache["specials"])
+
+  Special.resetInstinct()
 
   local doneMap = {}
 

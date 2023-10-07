@@ -1,3 +1,9 @@
+local instinct = nil
+
+function resetInstinct()
+  instinct = nil
+end
+
 function exists(nodeChar, nodeFeature)
   local sClassName = StringManager.strip(DB.getValue(nodeFeature, "...name", ""))
   local sFeatureStrip = StringManager.strip(DB.getValue(nodeFeature, "name", ""))
@@ -52,11 +58,46 @@ function removeSuffix(value, suffix)
   end
 end
 
+-- Pathbuilder returns the animal instinct animal as just "Cat", so we have to handle this manually
+function fixInstinctChoice(value)
+  local choices = { 
+    "Ape", "Bear", "Bull", "Cat", "Deer", "Frog", "Shark", "Snake", "Wolf",
+    "Black", "Blue", "Brass", "Brine", "Bronze", "Cloud", "Copper", "Crystal", "Forest", "Gold", "Green", "Magma", "Red", "Sea", "Silver", "Sky", "Sovereign", "Umbral", "Underworld", "White"
+  }
+  for _, choice in ipairs(choices) do 
+    if value == choice then 
+      return "Rage - " .. value .. " (" .. instinct .. ")"
+    end
+  end
+  return value
+end
+
+function fixAnimalInstictAbilities(value)
+  local fixed = value:match("(.+) %(Instinct Ability%)$")
+
+  if fixed then 
+    return fixed .. " (Animal Instinct Ability)"
+  end
+
+  return value
+end
+
 
 function import(node, value)
+  if StringManager.endsWith(value, "Instinct") then
+    instinct = value
+  end
+
   value = removePrefix(value)
   value = removeSuffix(value, "Patron")
   value = removeSuffix(value, "Mystery")
+  
+  value = fixAnimalInstictAbilities(value)
+  value = fixInstinctChoice(value)
+
+  -- Rage isn't an ability
+  if value == "Rage" then return end 
+  if instinct and StringManager.endsWith(value, "(" .. instinct .. " Ability)") then return end
 
   local record = Finder.getLookupDataRecordGlobally(value)
 
@@ -70,5 +111,6 @@ function import(node, value)
 
   CharManager.addInfoDB(node, "reference_lookupdata", record.getNodeName())
 
+  Debug.chat(value .. " imported as " .. DB.getValue(record, "name", ""))
   return value .. " imported as " .. DB.getValue(record, "name", "")
 end
