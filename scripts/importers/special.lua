@@ -133,6 +133,5 @@ function import(node, value)
 
   CharManager.addInfoDB(node, "reference_lookupdata", record.getNodeName())
 
-  Debug.chat(value .. " imported as " .. DB.getValue(record, "name", ""))
   return value .. " imported as " .. DB.getValue(record, "name", "")
 end

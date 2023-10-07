@@ -354,8 +354,6 @@ function doPBImport(pcJson, updateExisting)
     end)
   end
 
-  Debug.chat(mappingCache["specials"])
-
   Special.resetInstinct()
 
   local doneMap = {}
