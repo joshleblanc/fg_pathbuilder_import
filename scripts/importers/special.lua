@@ -62,13 +62,14 @@ end
 function fixInstinctChoice(value)
   local choices = { 
     "Ape", "Bear", "Bull", "Cat", "Deer", "Frog", "Shark", "Snake", "Wolf",
-    "Black", "Blue", "Brass", "Brine", "Bronze", "Cloud", "Copper", "Crystal", "Forest", "Gold", "Green", "Magma", "Red", "Sea", "Silver", "Sky", "Sovereign", "Umbral", "Underworld", "White"
   }
+
   for _, choice in ipairs(choices) do 
     if value == choice then 
       return "Rage - " .. value .. " (" .. instinct .. ")"
     end
   end
+
   return value
 end
 
@@ -87,11 +88,32 @@ function import(node, value)
   if StringManager.endsWith(value, "Instinct") then
     instinct = value
   end
+  
+  -- colors don't do anything automatically, no class feats for them.
+  local colors = {
+    "Black", "Blue", "Brass", "Brine", "Bronze", "Cloud", "Copper", "Crystal", "Forest", "Gold", "Green", "Magma", "Red", "Sea", "Silver", "Sky", "Sovereign", "Umbral", "Underworld", "White"
+  }
+
+  for _, color in ipairs(colors) do 
+    if value == color then return end 
+  end
+
+  -- Elements don't do anything automatically
+  local elements = {
+    "Air", "Earth", "Fire", "Water"
+  }
+
+  for _, element in ipairs(elements) do 
+    if value == element then return end 
+  end
 
   value = removePrefix(value)
   value = removeSuffix(value, "Patron")
   value = removeSuffix(value, "Mystery")
-  
+  value = removeSuffix(value, "Methodology")
+  value = removeSuffix(value, "Racket")
+  value = removeSuffix(value, "Style") 
+
   value = fixAnimalInstictAbilities(value)
   value = fixInstinctChoice(value)
 
