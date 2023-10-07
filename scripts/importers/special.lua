@@ -41,11 +41,12 @@ end
 -- Pathbuilder uses the suffix "Patron" when dealing with witch patrons
 -- We need to remove that if we're importing a patron so we can match it against
 -- fgu data
-function removePatron(value)
-  local withoutPatron = value:match("(.+) Patron$")
+-- This applies to a few special data types. eg. mysteries, etc
+function removeSuffix(value, suffix)
+  local withoutSuffix = value:match("(.+) " .. suffix .. "$")
 
-  if withoutPatron then 
-    return withoutPatron
+  if withoutSuffix then 
+    return withoutSuffix
   else
     return value
   end
@@ -54,7 +55,8 @@ end
 
 function import(node, value)
   value = removePrefix(value)
-  value = removePatron(value)
+  value = removeSuffix(value, "Patron")
+  value = removeSuffix(value, "Mystery")
 
   local record = Finder.getLookupDataRecordGlobally(value)
 
