@@ -3,7 +3,7 @@
 <root version="3.3">
   <properties>
     <name>Feature: Pathbuilder Import</name>
-    <version>0.11</version>
+    <version>0.12</version>
     <loadorder>50</loadorder>
     <description>
       <text>Import Characters from Pathbuilder</text>
@@ -18,7 +18,7 @@
     </ruleset>
   </properties>
 
-  <announcement text="Pathbuilder Importer v0.11" font="emotefont"></announcement>
+  <announcement text="Pathbuilder Importer v0.12" font="emotefont"></announcement>
 
   <base>
 
