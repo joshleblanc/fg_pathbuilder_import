@@ -12,6 +12,7 @@
     </description>
     <ruleset>
       <name>PFRPG2</name>
+      <name>PFRPG2-Legacy</name>
     </ruleset>
   </properties>
 
