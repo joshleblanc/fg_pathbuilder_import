@@ -19,6 +19,8 @@ DEPENDENCIES = {
   background = { "ancestry" },
   spellCasters = { "specials" },
   focusSpells = { "specials" },
+  ancestryFree = { "ancestry", "background", "heritage" },
+  classBoosts = { "ancestry", "background", "heritage" },
   str = { "ancestry", "background", "heritage" },
   dex = { "ancestry", "background", "heritage" },
   con = { "ancestry", "background", "heritage" },
@@ -57,12 +59,12 @@ function onInit()
     background = Background.import,
     class = Class.import,
     alignment = Basic.import,
-    str = Characteristic.import,
-    dex = Characteristic.import,
-    con = Characteristic.import,
-    int = Characteristic.import,
-    wis = Characteristic.import,
-    cha = Characteristic.import,
+--    str = Characteristic.import,
+--    dex = Characteristic.import,
+--    con = Characteristic.import,
+--    int = Characteristic.import,
+--    wis = Characteristic.import,
+--    cha = Characteristic.import,
     deity = Deity.import,
     keyability = KeyAbility.import,
     level = Level.import,
@@ -104,8 +106,15 @@ function onInit()
     legendary = Proficiency.import,
     gender = Basic.import,
     age = Basic.import,
-    size = Size.import
+    size = Size.import,
+    ancestryFree = Boost.import,
+    backgroundBoosts = Boost.import, 
+    classBoosts = Boost.import   
   }
+
+  for i=1,20 do 
+    DBMap[tostring(i)] = Boost.import
+  end
 end
 
 function EachKey(fn, root)
@@ -238,8 +247,8 @@ function importKey(key, doneMap, call, mappingCache)
     end
   end
 
-  for _, el in ipairs(arr) do
-    call(key, el)
+  for index, el in ipairs(arr) do
+    call(key, el, index)
   end
 
   doneMap[key] = true
@@ -303,13 +312,13 @@ function doPBImport(pcJson, updateExisting)
 
   buildRequiredNodes(nodeChar)
 
-  function call(key, el)
+  function call(key, el, index)
 
     if updateExisting and StringManager.contains(updateExclusions, key) then
       return
     end
 
-    local msg = DBMap[key](nodeChar, el, key)
+    local msg = DBMap[key](nodeChar, el, key, index)
 
     if msg then
       if type(msg) == "table" then

@@ -3,7 +3,7 @@
 <root version="3.3">
   <properties>
     <name>Feature: Pathbuilder Import</name>
-    <version>0.12</version>
+    <version>0.13</version>
     <loadorder>50</loadorder>
     <description>
       <text>Import Characters from Pathbuilder</text>
@@ -18,7 +18,7 @@
     </ruleset>
   </properties>
 
-  <announcement text="Pathbuilder Importer v0.12" font="emotefont"></announcement>
+  <announcement text="Pathbuilder Importer v0.13" font="emotefont"></announcement>
 
   <base>
 
@@ -55,5 +55,7 @@
     <script name="Proficiency" file="scripts/importers/proficiency.lua" />
     <script name="Basic" file="scripts/importers/basic.lua" />
     <script name="Size" file="scripts/importers/size.lua" />
+    <script name="Boost" file="scripts/importers/boost.lua" />
+
   </base>
 </root>

@@ -1,0 +1,235 @@
+{
+    "success": true,
+    "build": {
+        "name": "Zuingar Rotbart",
+        "class": "Rogue",
+        "dualClass": null,
+        "level": 1,
+        "ancestry": "Gnome",
+        "heritage": "Custom Mixed Heritage",
+        "background": "Dedicated Delver (Athletics)",
+        "alignment": "N",
+        "gender": "Not set",
+        "age": "Not set",
+        "deity": "Trudd",
+        "size": 1,
+        "sizeName": "Small",
+        "keyability": "str",
+        "languages": [
+            "Common",
+            "Dwarven",
+            "Gnomish"
+        ],
+        "rituals": [],
+        "resistances": [],
+        "attributes": {
+            "ancestryhp": 8,
+            "classhp": 8,
+            "bonushp": 0,
+            "bonushpPerLevel": 0,
+            "speed": 25,
+            "speedBonus": 0
+        },
+        "abilities": {
+            "str": 18,
+            "dex": 14,
+            "con": 10,
+            "int": 10,
+            "wis": 12,
+            "cha": 14,
+            "breakdown": {
+                "ancestryFree": [
+                    "Str",
+                    "Cha"
+                ],
+                "ancestryBoosts": [],
+                "ancestryFlaws": [],
+                "backgroundBoosts": [
+                    "Str",
+                    "Dex"
+                ],
+                "classBoosts": [
+                    "Str"
+                ],
+                "mapLevelledBoosts": {
+                    "1": [
+                        "Str",
+                        "Cha",
+                        "Wis",
+                        "Dex"
+                    ]
+                }
+            }
+        },
+        "proficiencies": {
+            "classDC": 2,
+            "perception": 4,
+            "fortitude": 2,
+            "reflex": 4,
+            "will": 4,
+            "heavy": 0,
+            "medium": 2,
+            "light": 2,
+            "unarmored": 2,
+            "advanced": 0,
+            "martial": 2,
+            "simple": 2,
+            "unarmed": 2,
+            "castingArcane": 0,
+            "castingDivine": 0,
+            "castingOccult": 0,
+            "castingPrimal": 0,
+            "acrobatics": 2,
+            "arcana": 0,
+            "athletics": 2,
+            "crafting": 0,
+            "deception": 0,
+            "diplomacy": 2,
+            "intimidation": 2,
+            "medicine": 2,
+            "nature": 2,
+            "occultism": 0,
+            "performance": 0,
+            "religion": 0,
+            "society": 2,
+            "stealth": 2,
+            "survival": 2,
+            "thievery": 2
+        },
+        "mods": {},
+        "feats": [
+            [
+                "Combat Climber",
+                null,
+                "Awarded Feat",
+                1
+            ],
+            [
+                "Custom Mixed Heritage",
+                null,
+                "Heritage",
+                1,
+                "Heritage Feat",
+                "standardChoice",
+                null
+            ],
+            [
+                "Trap Finder",
+                null,
+                "Class Feat",
+                1,
+                "Rogue Feat 1",
+                "standardChoice",
+                null
+            ],
+            [
+                "Gnome Weapon Familiarity",
+                null,
+                "Ancestry Feat",
+                1,
+                "Gnome Feat 1",
+                "standardChoice",
+                null
+            ],
+            [
+                "Battle Medicine",
+                null,
+                "Skill Feat",
+                1,
+                "Skill Feat 1",
+                "standardChoice",
+                null
+            ]
+        ],
+        "specials": [
+            "Surprise Attack",
+            "Darkvision",
+            "Low-Light Vision",
+            "Ruffian Racket",
+            "Sneak Attack",
+            "Dwarf",
+            "Darkvision",
+            "Custom Mixed Heritage"
+        ],
+        "lores": [
+            [
+                "Cave",
+                2
+            ]
+        ],
+        "equipmentContainers": {},
+        "equipment": [],
+        "specificProficiencies": {
+            "trained": [],
+            "expert": [],
+            "master": [],
+            "legendary": []
+        },
+        "weapons": [
+            {
+                "name": "Clan Dagger",
+                "qty": 1,
+                "prof": "simple",
+                "die": "d4",
+                "pot": 0,
+                "str": "",
+                "mat": null,
+                "display": "Clan Dagger",
+                "runes": [],
+                "damageType": "P",
+                "attack": 7,
+                "damageBonus": 4,
+                "extraDamage": [],
+                "increasedDice": false
+            },
+            {
+                "name": "Gnome Flickmace",
+                "qty": 1,
+                "prof": "martial",
+                "die": "d6",
+                "pot": 0,
+                "str": "",
+                "mat": null,
+                "display": "Gnome Flickmace",
+                "runes": [],
+                "damageType": "B",
+                "attack": 7,
+                "damageBonus": 4,
+                "extraDamage": [],
+                "increasedDice": false
+            }
+        ],
+        "money": {
+            "cp": 0,
+            "sp": 0,
+            "gp": 2,
+            "pp": 0
+        },
+        "armor": [
+            {
+                "name": "Scale Mail",
+                "qty": 1,
+                "prof": "medium",
+                "pot": 0,
+                "res": "",
+                "mat": null,
+                "display": "Scale Mail",
+                "worn": true,
+                "runes": []
+            }
+        ],
+        "spellCasters": [],
+        "focusPoints": 0,
+        "focus": {},
+        "formula": [],
+        "acTotal": {
+            "acProfBonus": 3,
+            "acAbilityBonus": 2,
+            "acItemBonus": 3,
+            "acTotal": 18,
+            "shieldBonus": null
+        },
+        "pets": [],
+        "familiars": []
+    }
+}
