@@ -33,7 +33,7 @@
     <script name="JSONUtil" file="utility/json_util.lua" />
     <script name="Finder" file="utility/finder.lua" />
     <script name="Fzy" file="utility/fzy/fzy.lua" />
-
+    <script name="IMPBData" file="utility/data.lua" />
     <script name="Ancestry" file="scripts/importers/ancestry.lua" />
     <script name="Background" file="scripts/importers/background.lua" /> 
     <script name="Class" file="scripts/importers/class.lua" /> 
@@ -57,6 +57,7 @@
     <script name="Basic" file="scripts/importers/basic.lua" />
     <script name="Size" file="scripts/importers/size.lua" />
     <script name="Boost" file="scripts/importers/boost.lua" />
-
+    <script name="WeaponProficiency" file="scripts/importers/weapon_proficiency.lua" />
+    <script name="ArmorProficiency" file="scripts/importers/armor_proficiency.lua" />
   </base>
 </root>

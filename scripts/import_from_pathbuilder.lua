@@ -13,7 +13,7 @@ local updateExclusions = {
   "equipment",
   "weapons",
   "armor"
-}
+} 
 
 DEPENDENCIES = {
   background = { "ancestry" },
@@ -111,7 +111,16 @@ function onInit()
     size = Size.import,
     ancestryFree = Boost.import,
     backgroundBoosts = Boost.import, 
-    classBoosts = Boost.import   
+    classBoosts = Boost.import,
+    light = ArmorProficiency.import,
+    heavy = ArmorProficiency.import,
+    medium = ArmorProficiency.import,
+    unarmored = ArmorProficiency.import,
+    unarmed = WeaponProficiency.import,
+    simple = WeaponProficiency.import,
+    martial = WeaponProficiency.import,
+    advanced = WeaponProficiency.import,
+
   }
 
   for i=1,20 do 

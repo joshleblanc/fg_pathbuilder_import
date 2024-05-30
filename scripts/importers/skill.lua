@@ -6,13 +6,8 @@ function import(node, value, key)
     return key .. " not found"
   end
 
-  if value == 2 then
-    CharManager.setProficiency(skill, "trained")
-  elseif value == 4 then 
-    CharManager.setProficiency(skill, "expert")
-  elseif value == 6 then
-    CharManager.setProficiency(skill, "master")
-  elseif value == 8 then 
-    CharManager.setProficiency(skill, "legendary")
-  end
+  local level = IMPBData.proficiencyLevels[value]
+  CharManager.setProficiency(skill, level)
+
+  return key .. " " .. level
 end
