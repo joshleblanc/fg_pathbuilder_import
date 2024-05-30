@@ -82,6 +82,7 @@ function onInit()
     performance = Skill.import,
     religion = Skill.import,
     society = Skill.import,
+    stealth = Skill.import,
     survival = Skill.import,
     thievery = Skill.import,
     perception = Skill.import,
