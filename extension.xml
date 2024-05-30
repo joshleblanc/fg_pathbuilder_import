@@ -43,6 +43,7 @@
     <script name="Level" file="scripts/importers/level.lua" />
     <script name="Heritage" file="scripts/importers/heritage.lua" />
     <script name="Skill" file="scripts/importers/skill.lua" />
+    <script name="Save" file="scripts/importers/save.lua" />
     <script name="Feat" file="scripts/importers/feat.lua" />
     <script name="Lore" file="scripts/importers/lore.lua" />
     <script name="Currency" file="scripts/importers/currency.lua" />
