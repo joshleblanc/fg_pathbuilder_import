@@ -280,6 +280,10 @@ function doPBImport(pcJson, updateExisting)
   if not nodeChar then
     nodeChar = DB.createChild("charsheet")
     updateExisting = false
+
+    if OptionsManager.getOption("ACAD") == "on" then
+      PCActivitiesManager.constructDefaultActivities(nodeChar);
+    end	
   end
 
   if not nodeChar then
