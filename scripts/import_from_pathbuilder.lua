@@ -120,7 +120,10 @@ function onInit()
     simple = WeaponProficiency.import,
     martial = WeaponProficiency.import,
     advanced = WeaponProficiency.import,
-
+    castingDivine = SpellProficiency.import,
+    castingOccult = SpellProficiency.import,
+    castingPrimal = SpellProficiency.import,
+    castingArcane = SpellProficiency.import
   }
 
   for i=1,20 do 

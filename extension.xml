@@ -59,5 +59,6 @@
     <script name="Boost" file="scripts/importers/boost.lua" />
     <script name="WeaponProficiency" file="scripts/importers/weapon_proficiency.lua" />
     <script name="ArmorProficiency" file="scripts/importers/armor_proficiency.lua" />
+    <script name="SpellProficiency" file="scripts/importers/spell_proficiency.lua" />
   </base>
 </root>

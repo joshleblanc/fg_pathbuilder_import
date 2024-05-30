@@ -9,5 +9,5 @@ function import(node, value, key)
     local level = IMPBData.proficiencyLevels[value]
     CharManager.setProficiency(save, level)
 
-    return key .. " " .. level
+    return level
 end

@@ -7,7 +7,12 @@ function import(node, value, key)
   end
 
   local level = IMPBData.proficiencyLevels[value]
+
+  if value == 0 then 
+    return level
+  end
+
   CharManager.setProficiency(skill, level)
 
-  return key .. " " .. level
+  return level
 end
