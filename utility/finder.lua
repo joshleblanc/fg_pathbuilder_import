@@ -1,3 +1,15 @@
+local QUALIFIERS = {
+  greater =  "greater",
+  lesser = "lesser",
+  major =  "major",
+  moderate = "moderate",
+  ["true"] = "prefix", -- this one is dumb, staff of healing (true) is staff of healing - true staff of healing in fgu
+  ["type i"] = "i",
+  ["type ii"] = "ii",
+  ["type iii"] = "iii",
+  ["type iv"] = "iv",
+}
+
 function fixString(str)
   if not str then return "" end
 
@@ -11,7 +23,16 @@ function fixString(str)
   str = str:gsub("(.+) %[.+%]", "%1")
   str = StringManager.trim(str)
 
-  return str
+  for k, v in pairs(QUALIFIERS) do
+    if qualifier == k then
+      if v == "prefix" then
+        return str .. " - " .. k .. str
+      end
+      return str .. " - " .. v
+    end
+  end
+
+  return str 
 end
 
 local function find(sRecordName, aDataMap, fn)
