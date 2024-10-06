@@ -4,9 +4,10 @@ end
 
 function isFeatDupe(nodeChar, nodeFeat)
   local featList = nodeChar.createChild("featlist");
+  local name = DB.getValue(nodeFeat, "name", ""):lower()
 
   for _, el in pairs(featList.getChildren()) do
-    if DB.getValue(el, "name", "") == DB.getValue(nodeFeat, "name", "") then
+    if Finder.fixString(DB.getValue(el, "name", "")) == name then
 			return el;
 		end
   end
@@ -27,9 +28,11 @@ end
 function import(node, value)
   local feat = findFeat(value[1])
 
+
   if not feat then 
     return value[1] .. " not found"
   end 
+
 
   if isFeatDupe(node, feat) then 
     return value[1] .. " already exists"

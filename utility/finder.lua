@@ -1,8 +1,12 @@
-local function fixString(str)
+function fixString(str)
   if not str then return "" end
 
   str = GameSystem.removeActionSymbols(str)
   str = str:lower()
+
+  qualifier = string.match(str, "%((.+)%)")
+
+  -- Debug.chat(str, qualifier)
   str = str:gsub("(.+) %(.+%)", "%1")
   str = str:gsub("(.+) %[.+%]", "%1")
   str = StringManager.trim(str)
