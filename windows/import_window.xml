@@ -73,6 +73,7 @@
         </frame>
         <bounds>35,555,196,24</bounds>
         <textres>import_window_import_json</textres>
+        <color>#ffffff</color>
         <stateframe>
           <pressed name="buttonup" offset="-1,-1,-1,-1" nobaseframe="true" />
         </stateframe>
@@ -89,6 +90,7 @@
         </frame>
         <bounds>302,555,200,24</bounds>
         <textres>import_from_file</textres>
+        <color>#ffffff</color>
         <stateframe>
           <pressed name="buttonup" offset="-1,-1,-1,-1" nobaseframe="true" />
         </stateframe>
@@ -102,6 +104,7 @@
       <stringcontrol name="Label3">
         <bounds>553,115,410,20</bounds>
         <static textres="error_notes" />
+        <color>#ffffff</color>
         <readonly />
       </stringcontrol>
       <buttonfield name="overwrite">
@@ -113,12 +116,14 @@
       <stringcontrol name="Label4">
         <bounds>63,50,221,20</bounds>
         <static textres="cb_label" />
+        <color>#ffffff</color>
         <readonly />
       </stringcontrol>
       <stringcontrol name="Label5">
         <bounds>41,74,401,20</bounds>
         <static textres="update_info" />
         <readonly />
+        <color>#ffffff</color>
       </stringcontrol>
     </sheetdata>
   </windowclass>
